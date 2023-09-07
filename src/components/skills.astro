@@ -1,0 +1,72 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const title = "Skills"
+const description = "Here are some of the tools I have used on different projects."
+
+const features = [
+  {
+
+        title: "UI/UX Design",
+    description:
+      "Figma, Adobe Photoshop, Affinity, Canva, Pro Create, Inkscape.",
+    icon: "ph:paint-brush-fill",
+  },
+    {
+    title: "Front-end",
+    description:
+      "React, NextJS 13, Tailwind, Styled Components, Radix UI, Shadcn UI, Astro.",
+    icon: "ph:code-bold",
+  },
+    {
+    title: "Back-end & Database",
+    description:
+      "NextJS 13, SSR with React, Node.js, Express, REST API and MongoDB.",
+    icon: "bx:bxs-data",
+  },
+    {
+    title: "CMS & E-Commerce",
+    description:
+      "Contentful, Shopify, Wordpress, Woocommerce.",
+    icon: "mdi:cart-outline",
+  },
+  {
+    title: "Deployment & Hosting",
+    description:
+      "Fly.io, Vercel, Github Pages, Google Cloud",
+    icon: "akar-icons:vercel-fill",
+  },
+  {
+    title: "Others Tools",
+    description:
+      "Git, Github, VSCode, DaVinci Resolve, Pro Tools, Studio One",
+    icon: "tabler:tool",
+  },
+];
+---
+
+<div class="mt-24">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    {title}
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+   {description}
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
