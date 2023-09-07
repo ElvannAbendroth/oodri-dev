@@ -1,9 +1,9 @@
 ---
 draft: false
-title: "Oodri's Portfolio Website"
-snippet: "A static markdown portfolio website with blog, built with Astro 3.0 with Astroship Theme"
+title: "Portfolio Website"
+snippet: "A static markdown portfolio website with blog, built with Astro 3.0 & the Astroship Theme"
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
+    src: "/src/assets/oodri-dev.png",
     alt: "full stack web development"
 }
 publishDate: "2022-11-08 11:39"
