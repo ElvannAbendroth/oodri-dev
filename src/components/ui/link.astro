@@ -8,7 +8,7 @@ export interface LinkProps {
   [x: string]: any;
 }
 
-export type LinkStyle = "outline" | "primary" | "inverted" | "muted"
+export type LinkStyle = "outline" | "primary" | "subtle" | "inverted" | "muted";
 
 const {
   href,
@@ -27,6 +27,8 @@ const sizes = {
 const styles = {
   outline: "bg-white border-2 border-black hover:bg-gray-100 text-black ",
   primary: "bg-black text-white hover:bg-gray-800  border-2 border-transparent",
+  subtle:
+    "bg-gray-800 text-white hover:bg-gray-700  border-2 border-transparent",
   inverted: "bg-white text-black border-2 border-transparent",
   muted: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
 };

@@ -28,9 +28,13 @@ const portfolioCollection = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.string().transform((str) => new Date(str)),
-    author: z.string().default("Astroship"),
     category: z.string(),
     tags: z.array(z.string()),
+    stack: z.array(z.string()),
+    links: z.object({
+      demo: z.string(),
+      github: z.string(),
+    }),
   }),
 });
 
