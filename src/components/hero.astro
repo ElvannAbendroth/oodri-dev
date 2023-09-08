@@ -1,56 +1,50 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/headshot-1.jpg";
+// @ts-expect-error
+import heroImage from "../assets/headshot-1.jpg";
 import Link, { LinkStyle } from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 
-const headline = "Hei, I'm Oodri!"
-const subtitle = "I'm a full-stack developer with a love for design, problem solving & music"
-
+const headline = "Hei, I'm Oodri!";
+const subtitle =
+  "I'm a full-stack developer with a love for design, problem solving & music";
 
 const ctas = [
   {
-    href: 'https://github.com/ElvannAbendroth',
-    target: '_blank',
-    class: 'flex gap-1 items-center justify-center',
-    rel: 'noopener',
+    href: "https://github.com/ElvannAbendroth",
+    target: "_blank",
+    class: "flex gap-1 items-center justify-center",
+    rel: "noopener",
     icon: {
-      class: 'text-white w-5 h-5',
-      name: 'bx:bxl-github'
+      class: "text-white w-5 h-5",
+      name: "bx:bxl-github",
     },
-    label: 'Visit my Github',
-    style: 'primary'
-
+    label: "Visit my Github",
+    style: "primary",
   },
   {
-    href: 'https://www.dropbox.com/scl/fi/soherr4o4ypbl5eqea5ve/Audrey-Downey-Dev-Resume-August-2023-02.pdf?rlkey=h2cwhny1pf96vprgs40jtfy7p&dl=0',
-    target: '_blank',
-    class: 'flex gap-1 items-center justify-center',
-    rel: 'noopener',
+    href: "https://www.dropbox.com/scl/fi/soherr4o4ypbl5eqea5ve/Audrey-Downey-Dev-Resume-August-2023-02.pdf?rlkey=h2cwhny1pf96vprgs40jtfy7p&dl=0",
+    target: "_blank",
+    class: "flex gap-1 items-center justify-center",
+    rel: "noopener",
     icon: {
-      class: 'text-black w-6 h-6',
-      name: 'bx:bxs-cloud-download'
+      class: "text-black w-6 h-6",
+      name: "bx:bxs-cloud-download",
     },
-    label: 'Downlod my resume',
-    style: 'outline',
-    size: "lg"
-
-  }
-]
-
+    label: "Downlod my resume",
+    style: "outline",
+    size: "lg",
+  },
+];
 ---
 
 <main
   class="grid md:grid-cols-2 md:place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-2">
-    <Picture
-      src={heroImage}
+    <img
+      src={heroImage.src}
       alt="Astronaut in the air"
-      widths={[400, 400, 600]}
-      aspectRatio="1:1"
       sizes="(max-width: 300px) 100vw, 300px"
       loading="eager"
-      format="avif"
       class="rounded-full"
     />
   </div>
@@ -63,20 +57,23 @@ const ctas = [
       {subtitle}
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
-{ctas.map(cta => {
-  return  <Link
-       
-        href={cta.href}
-        target={cta.target}
-        class={cta.class}
-        rel={cta.rel || "noopener"}
-        style={cta.style as LinkStyle}
-        size={cta.size}>
-        <Icon class={cta.icon.class} name={cta.icon.name} />
+      {
+        ctas.map((cta) => {
+          return (
+            <Link
+              href={cta.href}
+              target={cta.target}
+              class={cta.class}
+              rel={cta.rel || "noopener"}
+              style={cta.style as LinkStyle}
+              size={cta.size}>
+              <Icon class={cta.icon.class} name={cta.icon.name} />
 
-        {cta.label}
-      </Link>
-})}
+              {cta.label}
+            </Link>
+          );
+        })
+      }
     </div>
   </div>
 </main>

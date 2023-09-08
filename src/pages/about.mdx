@@ -1,16 +1,13 @@
+---
+---
 
----
----
 import { getCollection } from "astro:content";
-import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Cta from "@components/cta.astro";
 
 import heroImage from "assets/headshot-1.jpg";
-
-
 
 <Layout title="About">
   <Container>
@@ -25,15 +22,9 @@ import heroImage from "assets/headshot-1.jpg";
 
     <div class="group flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left ">
         <div class="w-full px-12 sm:px-0 sm:w-[150px] items-center text-center">
-          <Picture
+          <img
             src={heroImage}
             alt="Profile picture"
-            sizes="(max-width: 800px) 100vw, 400px"
-            widths={[200, 400]}
-            aspectRatio="1:1"
-            background="#ffffff"
-            fit="cover"
-            position="center"
             class="w-full transition group-hover:-translate-y-1 group-hover:shadow-xl rounded-full aspect-square"
           />
         </div>
@@ -47,11 +38,10 @@ import heroImage from "assets/headshot-1.jpg";
       </div>
       <hr class='my-8'/>
       <div class="flex flex-col mx-auto max-w-4xl prose">
-      
 
 ## 👋 Hey there, Nice to meet you!
 
- 🌿 I'm a **full-stack web developer** based in Helsinki, dedicated to crafting seamless user experiences by bridging the worlds of design and code.  My current favorite technologies include NextJS, Tailwind & MongoDB
+🌿 I'm a **full-stack web developer** based in Helsinki, dedicated to crafting seamless user experiences by bridging the worlds of design and code. My current favorite technologies include NextJS, Tailwind & MongoDB
 
 🌟 My journey into coding started as early as childhood, as I sought innovative solutions to solve my day-to-day challenges by automating tasks on my trusty computer.
 
@@ -66,10 +56,11 @@ import heroImage from "assets/headshot-1.jpg";
 💡 I'm on the lookout for projects that will push my technical and creative boundaries. I'd love to join a team of passionate developers for which my unique set skills and experience can be an asset, and from which I can learn new skills!
 
 Let's chat! 🚀
- 
+
       </div>
-      
+
     </div>
         <Cta />
+
   </Container>
 </Layout>
