@@ -18,7 +18,6 @@ export async function getStaticPaths() {
 // Get the entry directly from the prop on render
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-console.log(entry.data.image.src);
 ---
 
 <Layout title={entry.data.title}>
@@ -31,10 +30,13 @@ console.log(entry.data.image.src);
         <span class="">back to portfolio</span>
       </a>
       <p
+        transition:name={entry.data.title + entry.data.category}
         class="text-blue-400 text-sm font-semibold uppercase tracking-wider mb-2">
         {entry.data.category}
       </p>
+
       <h1
+        transition:name={entry.data.title}
         class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight mb-4">
         {entry.data.title}
       </h1>
@@ -53,12 +55,10 @@ console.log(entry.data.image.src);
           })
         }
       </div>
-    </div>
-
-    <div class="mx-auto mt-4 max-w-3xl">
       <Image
+        transition:name={entry.data.image.alt}
         src={entry.data.image.src}
-        class="w-full rounded-md border"
+        class="w-full rounded-md border mb-6"
         alt={entry.data.image.alt}
         sizes="(max-width: 800px) 100vw, 500px"
         height={1920}
@@ -66,37 +66,17 @@ console.log(entry.data.image.src);
         quality={60}
       />
 
-      <!-- <div class="w-full md:w-auto flex flex-wrap gap-3 items-center my-6">
-        <Link
-          href={entry.data.links.github}
-          target="_blank"
-          class="flex gap-1 items-center justify-center"
-          style="primary"
-          size="md">
-          <Icon class="w-6 h-6" name="bx:bxl-github" />
-
-          Project on Github
-        </Link>
-        <Link
-          href={entry.data.links.github}
-          target="_blank"
-          class="flex gap-1 items-center justify-center"
-          style="outline"
-          size="md">
-          <Icon class="w-4 h-4" name="simple-icons:vercel" />
-
-          Live Demo
-        </Link>
-      </div> -->
-
       <div
         class="my-8 rounded-md px-6 py-8 w-full border border-gray-200 flex flex-col gap-4">
         <p class="font-bold text-lg">About this project</p>
 
-        <p class="text-sm">{entry.data.snippet}</p>
+        <p transition:name={entry.data.snippet} class="text-sm">
+          {entry.data.snippet}
+        </p>
 
         <div class="w-full md:w-auto flex flex-wrap gap-3 items-center">
           <Link
+            transition:name={entry.data.links.github}
             href={entry.data.links.github}
             target="_blank"
             class="flex gap-1 items-center justify-center"
@@ -107,6 +87,7 @@ console.log(entry.data.image.src);
             Github Repo
           </Link>
           <Link
+            transition:name={entry.data.links.demo}
             href={entry.data.links.demo}
             target="_blank"
             class="flex gap-1 items-center justify-center"

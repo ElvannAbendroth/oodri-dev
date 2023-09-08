@@ -8,9 +8,10 @@ import Cta from "@components/cta.astro";
 import heroImage from "assets/headshot-1.jpg";
 ---
 
-<PageLayout title="About">
+<PageLayout title="About" subtitle="A little more about me">
   <div class="w-full px-14 sm:px-0 sm:w-[150px] mx-auto">
     <img
+      transition:name="headshot"
       src={heroImage.src}
       alt="Profile picture"
       class="w-full transition group-hover:-translate-y-1 group-hover:shadow-xl rounded-full aspect-square"

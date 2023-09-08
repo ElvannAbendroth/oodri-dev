@@ -37,6 +37,7 @@ publishedPortfolioEntries.sort(function (a, b) {
               <a href={`/portfolio/${portfolioEntry.slug}`}>
                 <div class="flex flex-col gap-2">
                   <Image
+                    transition:name={portfolioEntry.data.image.alt}
                     src={portfolioEntry.data.image.src}
                     alt={portfolioEntry.data.image.alt}
                     sizes="(max-width: 800px) 100vw, 800px"
@@ -50,10 +51,17 @@ publishedPortfolioEntries.sort(function (a, b) {
 
                   <div class="flex flex-col gap-6">
                     <div>
-                      <span class="text-blue-400 uppercase tracking-wider text-xs font-medium">
+                      <span
+                        transition:name={
+                          portfolioEntry.data.title +
+                          portfolioEntry.data.category
+                        }
+                        class="text-blue-400 uppercase tracking-wider text-xs font-medium">
                         {portfolioEntry.data.category}
                       </span>
-                      <h2 class="text-3xl font-bold leading-snug tracking-tight mt-1 ">
+                      <h2
+                        transition:name={portfolioEntry.data.title}
+                        class="text-3xl font-bold leading-snug tracking-tight mt-1 ">
                         {portfolioEntry.data.title}
                       </h2>
                     </div>
@@ -61,10 +69,15 @@ publishedPortfolioEntries.sort(function (a, b) {
                 </div>
               </a>
               <div class="mt-4 mb-6">
-                <span class="text-gray-400">{portfolioEntry.data.snippet}</span>
+                <span
+                  transition:name={portfolioEntry.data.snippet}
+                  class="text-gray-400">
+                  {portfolioEntry.data.snippet}
+                </span>
               </div>
               <div class="flex gap-2 mt-3">
                 <Link
+                  transition:name={portfolioEntry.data.links.github}
                   target="_blank"
                   class="text-sm flex gap-2 items-center"
                   style="primary"
@@ -74,6 +87,7 @@ publishedPortfolioEntries.sort(function (a, b) {
                   repo
                 </Link>
                 <Link
+                  transition:name={portfolioEntry.data.links.demo}
                   target="_blank"
                   class="text-sm flex gap-2 items-center"
                   href={portfolioEntry.data.links.demo}
