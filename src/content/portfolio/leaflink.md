@@ -4,7 +4,7 @@ title: "Leaflink"
 snippet: "A Linktree clone build with NextJS 13, Tailwind, Radix UI & MongoDB"
 image: {
     src: "/src/assets/portfolio/leaflink.jpg",
-    alt: "full stack web development"
+    alt: "Full-stack web development"
 }
 publishDate: "2022-11-08 11:39"
 category: "Fullstack App"
