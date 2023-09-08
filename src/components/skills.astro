@@ -6,7 +6,7 @@ const title = "Skills";
 const description =
   "Here are some of the tools I have used on different projects.";
 
-const features = [
+const skills = [
   {
     title: "UI/UX Design",
     description:
@@ -41,27 +41,31 @@ const features = [
 ];
 ---
 
-<div class="mt-24">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    {title}
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    {description}
-  </p>
-</div>
+<div class="flex flex-col gap-10 my-16">
+  <div class="flex flex-col gap-4">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      {title}
+    </h2>
+    <p class="text-lg mt-4 text-slate-600">
+      {description}
+    </p>
+  </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-16">
+    {
+      skills.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-white" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </div>

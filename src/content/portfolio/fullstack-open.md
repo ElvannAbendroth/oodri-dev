@@ -3,7 +3,7 @@ draft: false
 title: "Full-stack Open Blog"
 snippet: "A full-stack web application built with React, Express & MongoDB"
 image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
+    src: "/src/assets/portfolio/fullstack-open.jpg",
     alt: "full stack web development"
 }
 publishDate: "2021-11-08 11:39"
@@ -16,4 +16,9 @@ links: {
 }
 ---
 
+**Credentials for the demo account:**
+```
+username: mluukkai
+password: salainen
+```
 

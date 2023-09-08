@@ -5,7 +5,7 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Icon } from "astro-icon";
 
-type MenuItem = { title: string, path: string, children?: MenuItem[]}
+type MenuItem = { title: string; path: string; children?: MenuItem[] };
 
 const menuitems: MenuItem[] = [
   // {
@@ -26,10 +26,10 @@ const menuitems: MenuItem[] = [
     title: "Portfolio",
     path: "/portfolio",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
   {
     title: "Contact",
     path: "/contact",
@@ -38,11 +38,10 @@ const menuitems: MenuItem[] = [
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+  <header class="flex flex-col sm:flex-row justify-between items-center my-5">
     <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg flex items-center gap-2"
-          >
+      <div class="flex w-full sm:w-auto items-center justify-between">
+        <a href="/" class="text-lg flex items-center gap-2">
           <Icon class="h-8" name="ion:game-controller" />
           <div>
             <span class="font-bold text-slate-800">Oodri</span><span
@@ -50,12 +49,12 @@ const menuitems: MenuItem[] = [
             >
           </div>
         </a>
-        <div class="block lg:hidden">
-          <MenuIcon class="w-4 h-4 text-gray-800" />
+        <div class="block sm:hidden">
+          <MenuIcon class="w-6 h-6 text-gray-800" />
         </div>
       </div>
-      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+      <MenuItems class="hidden w-full sm:w-auto mt-2 sm:flex sm:mt-0">
+        <ul class="flex flex-col sm:flex-row sm:gap-3">
           {
             menuitems.map((item, index) => (
               <>
@@ -71,7 +70,7 @@ const menuitems: MenuItem[] = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+                      class="flex sm:px-3 py-2 text-gray-600 hover:text-gray-900">
                       {item.title}
                     </a>
                   </li>
@@ -80,14 +79,14 @@ const menuitems: MenuItem[] = [
             ))
           }
         </ul>
-        <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
+        <!-- <div class="sm:hidden flex items-center mt-3 gap-4">
           <Link href="#" style="muted" block size="md">Log in</Link>
           <Link href="#" size="md" block>Sign up</Link>
         </div> -->
       </MenuItems>
     </Astronav>
     <!-- <div>
-      <div class="hidden lg:flex items-center gap-4">
+      <div class="hidden sm:flex items-center gap-4">
         <a href="#">Log in</a>
         <Link href="#" size="md">Sign up</Link>
       </div>

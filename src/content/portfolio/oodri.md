@@ -3,8 +3,8 @@ draft: false
 title: "Portfolio Website"
 snippet: "A static markdown portfolio website with blog, built with Astro 3.0 & the Astroship Theme"
 image: {
-    src: "./src/assets/oodri-dev.png",
-    alt: "full stack web development"
+    src: "/src/assets/portfolio/oodri-dev.jpg",
+    alt: "Oodri Dev Portfolio Website"
 }
 publishDate: "2022-11-08 11:39"
 category: "Static Blog"

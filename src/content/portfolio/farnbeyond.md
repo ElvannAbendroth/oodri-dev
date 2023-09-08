@@ -1,10 +1,10 @@
 ---
 draft: false
-title: "Far'n Beyond Landing Page"
+title: "Far'n Beyond"
 snippet: "A simple landing page using NextJS 13 & Contentful as headless CMS"
 image: {
-    src: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240",
-    alt: "frontend master"
+    src: "/src/assets/portfolio/farnbeyond.jpg",
+    alt: "Far'n Beyond Landing Page"
 }
 publishDate: "2022-11-07 15:39"
 category: "Static Page"
