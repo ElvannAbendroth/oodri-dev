@@ -6,9 +6,9 @@ image: {
     src: "/src/assets/portfolio/leaflink.jpg",
     alt: "Full-stack web development"
 }
-publishDate: "2022-11-08 11:39"
+publishDate: "2023-09-08 11:39"
 category: "Fullstack App"
-tags: [nextjs, tailwindcss, frontend, backend]
+tags: []
 stack: [NextJS 13, Tailwind, MongoDB, Vercel]
 links: {
     demo: 'https://leaflink.vercel.app/',

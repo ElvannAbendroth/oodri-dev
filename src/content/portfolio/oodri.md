@@ -1,13 +1,13 @@
 ---
 draft: false
-title: "Portfolio Website"
+title: "this.portfolio"
 snippet: "A static markdown portfolio website with blog, built with Astro 3.0 & the Astroship Theme"
 image: {
     src: "/src/assets/portfolio/oodri-dev.jpg",
     alt: "Oodri Dev Portfolio Website"
 }
 publishDate: "2022-11-08 11:39"
-category: "Static Blog"
+category: "Static Markdown Blog"
 tags: [webdev, tailwindcss, frontend]
 stack: [ ]
 links: {

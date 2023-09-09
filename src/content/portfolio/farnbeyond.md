@@ -7,9 +7,9 @@ image: {
     alt: "Far'n Beyond Landing Page"
 }
 publishDate: "2022-11-07 15:39"
-category: "Static Page"
-tags: [nextjs, tailwindcss, frontend,]
-stack: [React, Express, NodeJS, MongoDB, Fly.io ]
+category: "Landing Page"
+tags: []
+stack: [NextJS, Tailwind, Contentful ]
 links: {
     demo: 'https://farn-beyond.vercel.app/',
     github: 'https://github.com/farnbeyond/farn-beyond'

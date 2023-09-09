@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2021-11-08 11:39"
 category: "Course Project"
-tags: [nextjs, tailwindcss, frontend, backend]
+tags: []
 stack: [React, Express, NodeJS, MongoDB, Fly.io, NextAuth ]
 links: {
     demo: 'https://fo-blogapp.fly.dev/',
