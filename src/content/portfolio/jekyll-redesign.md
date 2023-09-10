@@ -52,9 +52,13 @@ The new identity will have a much simpler color palette.  Jekyll's roots in  got
 
 ![Before & After Comparison](../../assets/portfolio/jekyll-compare.png)
 
-The current user experience on Jekyll's website is lacking: there is not clear call to action or clear structure to the page.
+The current user experience on Jekyll's website is lacking: there is not clear call to action or clear structure to the page.  
 
-The current top navigation is cluttered and its elements lack a coherent visual structure. The software version will be de-emphasized and put next to the logo, the search bar was put in the center, and the pages will be sent to the right.  The "home" menu item will be removed, and the GitHub link will be transformed into an icon.  These changes will help users find the content that they want more easily.
+### Top Navigation
+
+The current top navigation is cluttered and its elements lack a coherent visual structure. The software version will be de-emphasized and put next to the logo, the search bar was put in the center, and the pages will be sent to the right.  The "home" menu item will be removed, and the GitHub link will be transformed into an icon.  These changes will help users find the content they're looking for more easily.
+
+### Hero Section 
 
 In order to fix this issue, we will need to redesign the content sections, starting with a hero section that stands out and provides the user with a clear call to action.
 
@@ -63,11 +67,16 @@ Upon landing on the website, user a most likely to be looking to do either of th
 1. Create their very first Jekyll website
 2. Browsing documentation to help them develop using Jekyll.
 
+
 To help guide users to take these actions, the current headline will be changed to "create static websites & blogs from plain text in minutes", which provides a clearer understanding of what Jekyll is about.  A call-to-action button will be added and will redirect the users to the main content of the website: the documentation section.  The quick startup instructions code block will be made to stand out and will provide first-time users with relevant information.
+
+### Features
 
 Next, the product features will be divided into three cards and provide users will alternative actions to help them get a better understanding of how Jekyll can be used for their project.  The content will stay mostly the same, but the separation and spacing will be improved, making it easier to scan the page.
 
 One of the big features provided by Jekyll of the free and streamlined hosting with GitHub Pages.  The content of the next section section will remain the same, but the design will be cleaned up, and more emphasis will be put on the call to action "Learn more about GitHub Pages" with the use of an arrow.
+
+### Footer
 
 Lastly, the footer's content will remain the same, except for the addition of a secondary navigation menu with items that will provide more choices to the users to help them find what they need.
 
