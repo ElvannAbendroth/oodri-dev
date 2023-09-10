@@ -12,7 +12,7 @@ const publishedPortfolioEntries = await getCollection(
   "portfolio",
   ({ data }) => {
     return !data.draft && data.publishDate < new Date();
-  }
+  },
 );
 
 // Sort content entries by publication date
@@ -43,7 +43,7 @@ publishedPortfolioEntries.sort(function (a, b) {
                     sizes="(max-width: 800px) 100vw, 800px"
                     loading={index <= 2 ? "eager" : "lazy"}
                     decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md border"
+                    class="w-full rounded-md border hover:shadow-lg transition-all duration-500 hover:scale-[102%] hover:rotate-1"
                     height={1920}
                     width={1080}
                     quality={40}
@@ -76,26 +76,44 @@ publishedPortfolioEntries.sort(function (a, b) {
                 </span>
               </div>
               <div class="flex gap-2 mt-3">
-                <Link
-                  transition:name={portfolioEntry.data.links.github}
-                  target="_blank"
-                  class="text-sm flex gap-2 items-center"
-                  style="primary"
-                  size="sm"
-                  href={portfolioEntry.data.links.github}>
-                  <Icon class="w-6 h-6" name="bx:bxl-github" />
-                  repo
-                </Link>
-                <Link
-                  transition:name={portfolioEntry.data.links.demo}
-                  target="_blank"
-                  class="text-sm flex gap-2 items-center"
-                  href={portfolioEntry.data.links.demo}
-                  style="outline"
-                  size="sm">
-                  <Icon class="w-4 h-4" name="simple-icons:vercel" />
-                  live demo
-                </Link>
+                {portfolioEntry.data.links.github && (
+                  <Link
+                    transition:name={portfolioEntry.data.links.github}
+                    target="_blank"
+                    class="text-sm flex gap-2 items-center"
+                    style="primary"
+                    size="sm"
+                    href={portfolioEntry.data.links.github}>
+                    <Icon class="w-6 h-6" name="bx:bxl-github" />
+                    repo
+                  </Link>
+                )}
+                {portfolioEntry.data.links.demo && (
+                  <Link
+                    transition:name={portfolioEntry.data.links.demo}
+                    target="_blank"
+                    class="text-sm flex gap-2 items-center"
+                    href={portfolioEntry.data.links.demo}
+                    style="outline"
+                    size="sm">
+                    <Icon class="w-4 h-4" name="simple-icons:vercel" />
+                    live demo
+                  </Link>
+                )}
+                {portfolioEntry.data.links.behance &&
+                  (!portfolioEntry.data.links.github ||
+                    !portfolioEntry.data.links.demo) && (
+                    <Link
+                      href={portfolioEntry.data.links.behance}
+                      transition:name={portfolioEntry.data.links.behance}
+                      target="_blank"
+                      class="text-sm flex gap-2 items-center"
+                      style="outline"
+                      size="sm">
+                      <Icon class="w-4 h-4" name="ri:behance-fill" />
+                      Behance Project
+                    </Link>
+                  )}
               </div>
             </li>
           ))

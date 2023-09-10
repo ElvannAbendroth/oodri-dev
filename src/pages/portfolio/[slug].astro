@@ -75,34 +75,54 @@ const { Content } = await entry.render();
         </p>
 
         <div class="w-full md:w-auto flex flex-wrap gap-3 items-center">
-          <Link
-            transition:name={entry.data.links.github}
-            href={entry.data.links.github}
-            target="_blank"
-            class="flex gap-1 items-center justify-center"
-            style="primary"
-            size="md">
-            <Icon class="w-6 h-6" name="bx:bxl-github" />
-
-            Github Repo
-          </Link>
-          <Link
-            transition:name={entry.data.links.demo}
-            href={entry.data.links.demo}
-            target="_blank"
-            class="flex gap-1 items-center justify-center"
-            style="outline"
-            size="md">
-            <Icon class="w-4 h-4" name="simple-icons:vercel" />
-
-            Live Demo
-          </Link>
+          {
+            entry.data.links.github && (
+              <Link
+                transition:name={entry.data.links.github}
+                href={entry.data.links.github}
+                target="_blank"
+                class="flex gap-1 items-center justify-center"
+                style="primary"
+                size="md">
+                <Icon class="w-6 h-6" name="bx:bxl-github" />
+                Github Repo
+              </Link>
+            )
+          }
+          {
+            entry.data.links.demo && (
+              <Link
+                transition:name={entry.data.links.demo}
+                href={entry.data.links.demo}
+                target="_blank"
+                class="flex gap-1 items-center justify-center"
+                style="outline"
+                size="md">
+                <Icon class="w-4 h-4" name="simple-icons:vercel" />
+                Live Demo
+              </Link>
+            )
+          }
+          {
+            entry.data.links.behance && (
+              <Link
+                href={entry.data.links.behance}
+                transition:name={entry.data.links.behance}
+                target="_blank"
+                class="flex gap-1 items-center justify-center"
+                style="outline"
+                size="md">
+                <Icon class="w-4 h-4" name="ri:behance-fill" />
+                Behance Project
+              </Link>
+            )
+          }
         </div>
       </div>
 
       <!-- <hr /> -->
 
-      <div class="prose prose-lg mt-6">
+      <div class="prose prose-lg mt-6 prose-img:rounded-md prose-img:border">
         <Content />
       </div>
       <div class="flex text-center mt-8">

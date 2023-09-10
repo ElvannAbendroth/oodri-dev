@@ -6,7 +6,7 @@ image: {
     src: "/src/assets/portfolio/oodri-dev.jpg",
     alt: "Oodri Dev Portfolio Website"
 }
-publishDate: "2022-11-08 11:39"
+publishDate: "2023-09-08 11:39"
 category: "Static Markdown Blog"
 tags: [webdev, tailwindcss, frontend]
 stack: [ ]
@@ -16,4 +16,15 @@ links: {
 }
 ---
 
-As much as I enjoy being actively involved in the design process of projects I work on, sometimes, the best solution is the one that gets you there the quickest.  This portfolio is my project using Astro, which wasn't a big leap for me after working with NextJS.  The reason I decided to build this website with a new framework rather than the one I had been working with for a while is because although NextJS can do all of those things, a more lightweight framework with a large collection of starter templates & themes to start with was going to save me a lot of time on the setup.
+## Project Overview
+This portfolio website is a static markdown site created using Astro 3.0. It's my first project with Astro. To begin, I used the "Astroship" theme as a starting point and customized its design and layouts to suit the project's needs.
+
+## Development Experience
+
+Developing this site was a quick and enjoyable process. Despite having no prior experience with Astro, I had a deployable version ready in just two days. I chose Astro over Jekyll due to its Node.js foundation and seamless compatibility with React, a technology I'm familiar with.
+
+I opted for Astro over Next.js for two reasons. First, I was curious about Astro's capabilities. Second, it proved to be more efficient. Astro's lightweight structure and extensive collection of starter templates and themes saved a lot of development time compared to Next.js.
+
+## Future Plans
+
+I'm looking forward to using Astro for future projects, building on the experience gained from this one.

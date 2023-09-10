@@ -32,10 +32,13 @@ const portfolioCollection = defineCollection({
       category: z.string(),
       tags: z.array(z.string()),
       stack: z.array(z.string()),
-      links: z.object({
-        demo: z.string(),
-        github: z.string(),
-      }),
+      links: z
+        .object({
+          demo: z.string(),
+          github: z.string(),
+          behance: z.string(),
+        })
+        .deepPartial(),
     }),
 });
 
