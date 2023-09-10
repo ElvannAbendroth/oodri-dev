@@ -15,7 +15,7 @@ links: {
 }
 ---
 
-![Jekyll Homepage Redesign](/src/assets/portfolio/jekyll-homepage.png)
+![Jekyll Homepage Redesign](../../assets/portfolio/jekyll-homepage.png)
 
 ## Project
 
@@ -28,7 +28,7 @@ The goal of this project is to redesign their documentation website look and exp
 The challenge of this project will be to update Jekyll's homepage to make it align with their brand identity better, and make it easier for users to find the information that they need. The current homepage looks **outdated**, **lacks good visual hierarchy** and **doesn't provide the user with a clear call to action**.
 
 Previous Design:
-![Previous Design](/src/assets/portfolio/jekyll-before.png)
+![Previous Design](../../assets/portfolio/jekyll-before.png)
 
 ## Brand Research
 
@@ -46,11 +46,11 @@ The new identity will have a much simpler color palette.  Jekyll's roots in  got
 
 "Quarttrocento" will be the new typography for the titles and headings, as well as for the brand logo.  This font will pair well with Open Sans for the body.
 
-![Logo & Colors](/src/assets/portfolio/jekyll-typo.png)
+![Logo & Colors](../../assets/portfolio/jekyll-typo.png)
 
 ## Homepage Experience Redesign
 
-![Logo & Colors](/src/assets/portfolio/jekyll-compare.png)
+![Before & After Comparison](../../assets/portfolio/jekyll-compare.png)
 
 The current user experience on Jekyll's website is lacking: there is not clear call to action or clear structure to the page.
 

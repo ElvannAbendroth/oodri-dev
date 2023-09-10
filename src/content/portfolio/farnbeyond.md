@@ -25,7 +25,7 @@ Since hosting a full Wordpress was **unnecessarily costly** and didn't provide a
 
 Then the band needed to be able to change the hero section and customize the calls-to-action so they would be able to promote their new releases on their landing page.  **The cover image, titles, descriptions and call to actions are fully customizable** through the **Contentful** interface.  The website's about section is also customizable, as well as the member's list.
 
-![Contentful Dashboard](/src/assets/portfolio/farnbeyond-contentful.png)
+![Contentful Dashboard](../../assets/portfolio/farnbeyond-contentful.png)
 
 ## Future Updates
 
