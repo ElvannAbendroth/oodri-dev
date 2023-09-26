@@ -4,37 +4,9 @@ import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Icon } from "astro-icon";
+import config from "@utils/config";
 
-type MenuItem = { title: string; path: string; children?: MenuItem[] };
-
-const menuitems: MenuItem[] = [
-  // {
-  //   title: "Features",
-  //   path: "#",
-  //   children: [
-  //     { title: "Action", path: "/" },
-  //     { title: "Another action", path: "#" },
-  //     { title: "Dropdown Submenu", path: "#" },
-  //     { title: "404 Page", path: "/404" },
-  //   ],
-  // },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Portfolio",
-    path: "/portfolio",
-  },
-  // {
-  //   title: "Blog",
-  //   path: "/blog",
-  // },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-];
+const nav = config.nav;
 ---
 
 <Container>
@@ -56,13 +28,13 @@ const menuitems: MenuItem[] = [
       <MenuItems class="hidden w-full sm:w-auto mt-2 sm:flex sm:mt-0">
         <ul class="flex flex-col sm:flex-row sm:gap-3">
           {
-            menuitems.map((item, index) => (
+            nav.map((item, index) => (
               <>
                 {item.children && (
                   <Dropdown
                     title={item.title}
                     children={item.children}
-                    lastItem={index === menuitems.length - 1}
+                    lastItem={index === nav.length - 1}
                   />
                 )}
 
