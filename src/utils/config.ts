@@ -1,9 +1,14 @@
 interface SiteConfig {
-  hero: string;
+  hero: any;
   nav: MenuItem[];
 }
 
-type MenuItem = { title: string; path: string; children?: MenuItem[] };
+type MenuItem = {
+  title: string;
+  path: string;
+  children?: MenuItem[];
+  download: boolean;
+};
 
 export const config: SiteConfig = {
   hero: {
@@ -25,7 +30,8 @@ export const config: SiteConfig = {
         style: "primary",
       },
       {
-        href: "https://www.dropbox.com/scl/fi/3vng7okughc0wfw8hnn34/Audrey-Downey-Dev-Resume-September-2025.pdf?rlkey=p8n0ydmaz80tw3dg8xol0kph5&dl=0",
+        href: "/src/assets/resume/Audrey Downey - Dev Resume September 2023.pdf",
+        download: "Audrey Downey - Resume September 2023",
         target: "_blank",
         class: "flex gap-1 items-center justify-center",
         rel: "noopener",
