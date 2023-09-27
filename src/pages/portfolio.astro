@@ -25,10 +25,6 @@ function filterByCategory(entries, category) {
   });
 }
 
-const filteredEntries = filterByCategory(
-  publishedPortfolioEntries,
-  "Landing Page",
-);
 // Sort content entries by publication date
 publishedPortfolioEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
@@ -54,6 +50,7 @@ publishedPortfolioEntries.sort(function (a, b) {
             All
           </Link>
           <Link
+            id="link-fullstack"
             href="/portfolio/?search=Full-stack App"
             size="sm"
             style="subtle"
