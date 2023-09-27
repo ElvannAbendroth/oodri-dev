@@ -19,7 +19,7 @@ const entries = Astro.props.entries;
         <a href={`/portfolio/${portfolioEntry.slug}`}>
           <div class="flex flex-col gap-2">
             <Image
-              transition:name={portfolioEntry.data.image.alt}
+              transition:name={`image-${portfolioEntry.data.title}`}
               src={portfolioEntry.data.image.src}
               alt={portfolioEntry.data.image.alt}
               sizes="(max-width: 800px) 100vw, 800px"
@@ -59,7 +59,7 @@ const entries = Astro.props.entries;
         <div class="flex gap-2 mt-3">
           {portfolioEntry.data.links.github && (
             <Link
-              transition:name={portfolioEntry.data.links.github}
+              transition:name={`github-${portfolioEntry.data.links.github}`}
               target="_blank"
               class="text-sm flex gap-2 items-center"
               style="primary"
@@ -71,7 +71,7 @@ const entries = Astro.props.entries;
           )}
           {portfolioEntry.data.links.demo && (
             <Link
-              transition:name={portfolioEntry.data.links.demo}
+              transition:name={`demo-${portfolioEntry.data.links.demo}`}
               target="_blank"
               class="text-sm flex gap-2 items-center"
               href={portfolioEntry.data.links.demo}
@@ -86,7 +86,7 @@ const entries = Astro.props.entries;
               !portfolioEntry.data.links.demo) && (
               <Link
                 href={portfolioEntry.data.links.behance}
-                transition:name={portfolioEntry.data.links.behance}
+                transition:name={`behance-${portfolioEntry.data.links.behance}`}
                 target="_blank"
                 class="text-sm flex gap-2 items-center"
                 style="outline"

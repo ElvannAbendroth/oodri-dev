@@ -4,7 +4,7 @@ title: "Opetellaan Suomea"
 snippet: "A language learning app for Finnish learners."
 image: {
     src: "/src/assets/portfolio/opetellaan-suomea.jpg",
-    alt: "Full-stack web development"
+    alt: "Opetellaan Suomea"
 }
 publishDate: "2023-09-25 11:39"
 category: "Full-stack App"

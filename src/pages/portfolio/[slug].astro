@@ -58,7 +58,7 @@ const { Content } = await entry.render();
         }
       </div>
       <Image
-        transition:name={entry.data.image.alt}
+        transition:name={`image-${entry.data.title}`}
         src={entry.data.image.src}
         class="w-full rounded-md border mb-6"
         alt={entry.data.image.alt}
@@ -80,7 +80,7 @@ const { Content } = await entry.render();
           {
             entry.data.links.github && (
               <Link
-                transition:name={entry.data.links.github}
+                transition:name={`github-${entry.data.links.github}`}
                 href={entry.data.links.github}
                 target="_blank"
                 class="flex gap-1 items-center justify-center"
@@ -94,7 +94,7 @@ const { Content } = await entry.render();
           {
             entry.data.links.demo && (
               <Link
-                transition:name={entry.data.links.demo}
+                transition:name={`demo-${entry.data.links.demo}`}
                 href={entry.data.links.demo}
                 target="_blank"
                 class="flex gap-1 items-center justify-center"
@@ -109,7 +109,7 @@ const { Content } = await entry.render();
             entry.data.links.behance && (
               <Link
                 href={entry.data.links.behance}
-                transition:name={entry.data.links.behance}
+                transition:name={`behance-${entry.data.links.behance}`}
                 target="_blank"
                 class="flex gap-1 items-center justify-center"
                 style="outline"
