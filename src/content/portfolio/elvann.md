@@ -4,10 +4,10 @@ title: "Elvann"
 snippet: "A portfolio website built with Wordpress & Designed with Elementor."
 image: {
     src: "/src/assets/portfolio/elvann-website.png",
-    alt: "Elvann's Portfolio Website"
+    alt: "Elvann's Portfolio"
 }
 publishDate: "2023-01-07 15:39"
-category: "Fullstack App"
+category: "Full-stack App"
 tags: []
 stack: [Wordpress]
 links: {

@@ -4,7 +4,7 @@ title: "Elvann Store"
 snippet: "An e-commerce store using Shopify, with Mailerlite and Printify Integrations."
 image: {
     src: "/src/assets/portfolio/elvannstore.png",
-    alt: "Elvann's Portfolio Website"
+    alt: "Elvann's Store"
 }
 publishDate: "2023-01-10 15:39"
 category: "E-Commerce Store"

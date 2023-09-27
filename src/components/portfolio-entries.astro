@@ -6,6 +6,12 @@ import { Image } from "astro:assets";
 const entries = Astro.props.entries;
 ---
 
+{
+  entries.length === 0 && (
+    <p class="text-center ">No entries to show for this category...</p>
+  )
+}
+
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-16 max-w-4xl mx-auto">
   {
     entries.map((portfolioEntry, index) => (

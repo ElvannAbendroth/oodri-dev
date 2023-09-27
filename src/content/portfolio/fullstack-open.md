@@ -5,10 +5,10 @@ snippet: "A full-stack web application built with React, Express & MongoDB"
 image:
   {
     src: "/src/assets/portfolio/fullstack-open.jpg",
-    alt: "full stack web development",
+    alt: "Full-stack open Blog",
   }
 publishDate: "2023-05-08 11:39"
-category: "Fullstack App"
+category: "Full-stack App"
 tags: []
 stack: [React, Express, NodeJS, MongoDB, Fly.io]
 links:

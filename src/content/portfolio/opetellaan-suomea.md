@@ -7,7 +7,7 @@ image: {
     alt: "Full-stack web development"
 }
 publishDate: "2023-09-25 11:39"
-category: "Fullstack App"
+category: "Full-stack App"
 tags: []
 stack: [NextJS 13, Tailwind, Vercel]
 links: {
