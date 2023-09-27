@@ -11,8 +11,8 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap(), react()],
   //output & adapter make site SSR and allows searchParams
 
-  output: "server",
-  adapter: nodejs({
-    mode: "middleware", // or 'standalone'
-  }),
+  // output: "server",
+  // adapter: nodejs({
+  //   mode: "middleware", // or 'standalone'
+  // }),
 });
