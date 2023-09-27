@@ -8,7 +8,7 @@ image:
     alt: "full stack web development",
   }
 publishDate: "2023-05-08 11:39"
-category: "Course Project"
+category: "Fullstack App"
 tags: []
 stack: [React, Express, NodeJS, MongoDB, Fly.io]
 links:

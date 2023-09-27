@@ -7,7 +7,7 @@ image: {
     alt: "Far'n Beyond Landing Page"
 }
 publishDate: "2023-09-07 15:39"
-category: "Landing Page"
+category: "Static Site"
 tags: []
 stack: [NextJS, Tailwind, Contentful ]
 links: {

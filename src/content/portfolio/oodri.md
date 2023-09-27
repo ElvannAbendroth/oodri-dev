@@ -7,7 +7,7 @@ image: {
     alt: "Oodri Dev Portfolio Website"
 }
 publishDate: "2023-09-08 11:39"
-category: "Static Markdown Blog"
+category: "Static Site"
 tags: [webdev, tailwindcss, frontend]
 stack: [ ]
 links: {

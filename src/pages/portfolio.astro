@@ -3,9 +3,12 @@ import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import PortfolioEntries from "@components/portfolio-entries.astro";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
-import { Image } from "astro:assets";
+
+export const prerender = true; //in SSR mode allows searchParams
+
+let search = Astro.url.searchParams.get("search")! || "";
 
 // Filter portfolio entries with 'draft: false' & date before current date
 const publishedPortfolioEntries = await getCollection(
@@ -15,6 +18,17 @@ const publishedPortfolioEntries = await getCollection(
   },
 );
 
+function filterByCategory(entries, category) {
+  if (category === "") return entries;
+  return entries.filter((entry) => {
+    return entry.data.category === category;
+  });
+}
+
+const filteredEntries = filterByCategory(
+  publishedPortfolioEntries,
+  "Landing Page",
+);
 // Sort content entries by publication date
 publishedPortfolioEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
@@ -29,96 +43,49 @@ publishedPortfolioEntries.sort(function (a, b) {
         Here's a list of recent projects I have worked on
       </Fragment>
     </Sectionhead>
-    <main class="mt-16">
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-16 max-w-4xl mx-auto">
-        {
-          publishedPortfolioEntries.map((portfolioEntry, index) => (
-            <li>
-              <a href={`/portfolio/${portfolioEntry.slug}`}>
-                <div class="flex flex-col gap-2">
-                  <Image
-                    transition:name={portfolioEntry.data.image.alt}
-                    src={portfolioEntry.data.image.src}
-                    alt={portfolioEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md border hover:shadow-lg transition-all duration-500 hover:scale-[102%] hover:rotate-1"
-                    height={1920}
-                    width={1080}
-                    quality={40}
-                  />
-
-                  <div class="flex flex-col gap-6">
-                    <div>
-                      <span
-                        transition:name={
-                          portfolioEntry.data.title +
-                          portfolioEntry.data.category
-                        }
-                        class="text-blue-400 uppercase tracking-wider text-xs font-medium">
-                        {portfolioEntry.data.category}
-                      </span>
-                      <h2
-                        transition:name={portfolioEntry.data.title}
-                        class="text-3xl font-bold leading-snug tracking-tight mt-1 ">
-                        {portfolioEntry.data.title}
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <div class="mt-4 mb-6">
-                <span
-                  transition:name={portfolioEntry.data.snippet}
-                  class="text-gray-400">
-                  {portfolioEntry.data.snippet}
-                </span>
-              </div>
-              <div class="flex gap-2 mt-3">
-                {portfolioEntry.data.links.github && (
-                  <Link
-                    transition:name={portfolioEntry.data.links.github}
-                    target="_blank"
-                    class="text-sm flex gap-2 items-center"
-                    style="primary"
-                    size="sm"
-                    href={portfolioEntry.data.links.github}>
-                    <Icon class="w-6 h-6" name="bx:bxl-github" />
-                    repo
-                  </Link>
-                )}
-                {portfolioEntry.data.links.demo && (
-                  <Link
-                    transition:name={portfolioEntry.data.links.demo}
-                    target="_blank"
-                    class="text-sm flex gap-2 items-center"
-                    href={portfolioEntry.data.links.demo}
-                    style="outline"
-                    size="sm">
-                    <Icon class="w-4 h-4" name="simple-icons:vercel" />
-                    live demo
-                  </Link>
-                )}
-                {portfolioEntry.data.links.behance &&
-                  (!portfolioEntry.data.links.github ||
-                    !portfolioEntry.data.links.demo) && (
-                    <Link
-                      href={portfolioEntry.data.links.behance}
-                      transition:name={portfolioEntry.data.links.behance}
-                      target="_blank"
-                      class="text-sm flex gap-2 items-center"
-                      style="outline"
-                      size="sm">
-                      <Icon class="w-4 h-4" name="ri:behance-fill" />
-                      Behance Project
-                    </Link>
-                  )}
-              </div>
-            </li>
-          ))
-        }
-      </ul>
+    <main class="mt-16 flex flex-col gap-6">
+      <div class="flex flex-col gap-4">
+        <div class="flex gap-2 justify-center">
+          <Link
+            href="/portfolio"
+            size="sm"
+            style="subtle"
+            isActive={search === "" && true}>
+            All
+          </Link>
+          <Link
+            href="/portfolio/?search=Fullstack App"
+            size="sm"
+            style="subtle"
+            isActive={search === "Fullstack App" && true}>
+            Fullstack App
+          </Link>
+          <Link
+            href="/portfolio/?search=UI/UX Design"
+            size="sm"
+            style="subtle"
+            isActive={search === "UI/UX Design" && true}>
+            UI/UX
+          </Link>
+          <Link
+            href="/portfolio/?search=E-Commerce Store"
+            size="sm"
+            style="subtle"
+            isActive={search === "E-Commerce Store" && true}>
+            E-Commerce
+          </Link>
+          <Link
+            href="/portfolio/?search=Static Site"
+            size="sm"
+            style="subtle"
+            isActive={search === "Static Site" && true}>
+            Static Site
+          </Link>
+        </div>
+      </div>
+      <PortfolioEntries
+        entries={filterByCategory(publishedPortfolioEntries, search)}
+      />
     </main>
   </Container>
 </Layout>
