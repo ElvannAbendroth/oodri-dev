@@ -3,7 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
-import nodejs from "@astrojs/node";
+
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,8 +12,8 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap(), react()],
   //output & adapter make site SSR and allows searchParams
 
-  // output: "server",
-  // adapter: nodejs({
-  //   mode: "middleware", // or 'standalone'
-  // }),
+  output: "server",
+  adapter: vercel({
+    edgeMiddleware: true,
+  }),
 });

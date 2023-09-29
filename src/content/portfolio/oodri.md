@@ -4,7 +4,7 @@ title: "this.portfolio"
 snippet: "A static markdown portfolio website with blog, built with Astro 3.0 & the Astroship Theme"
 image: {
     src: "/src/assets/portfolio/oodri-dev.jpg",
-    alt: "Oodri Dev Portfolio Website"
+    alt: "Oodri Dev Portfolio"
 }
 publishDate: "2023-09-08 11:39"
 category: "Static Site"
