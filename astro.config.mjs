@@ -13,6 +13,6 @@ export default defineConfig({
 
   output: "server",
   adapter: vercel({
-    includeFiles: ["./src/assets/**"],
+    includeFiles: ["./src/assets/**/*"],
   }),
 });
