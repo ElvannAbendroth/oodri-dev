@@ -51,7 +51,7 @@ export const config: SiteConfig = {
         style: "primary",
       },
       {
-        href: "/src/assets/resume/Audrey Downey - Dev Resume September 2023.pdf",
+        href: "./src/assets/resume/Audrey Downey - Dev Resume September 2023.pdf",
         download: "Audrey Downey - Resume September 2023",
         target: "_blank",
         class: "flex gap-1 items-center justify-center",
