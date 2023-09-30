@@ -7,7 +7,7 @@ type MenuItem = {
   title: string;
   path: string;
   children?: MenuItem[];
-  download: boolean;
+  download?: boolean;
 };
 
 export const config: SiteConfig = {
@@ -39,7 +39,7 @@ export const config: SiteConfig = {
           class: "text-black w-6 h-6",
           name: "bx:bxs-cloud-download",
         },
-        label: "Downlod my resume",
+        label: "Download my resume",
         style: "outline",
         size: "lg",
       },
