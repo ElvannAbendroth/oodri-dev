@@ -7,7 +7,7 @@ image: {
     alt: "Elvann's Portfolio"
 }
 publishDate: "2023-01-07 15:39"
-category: "Full-stack App"
+category: "Static Site"
 tags: []
 stack: [Wordpress]
 links: {

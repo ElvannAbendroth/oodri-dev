@@ -25,7 +25,7 @@ A [Linktree](https://linktr.ee/) clone built using Next, NextAuth, Tailwind & Mo
 The goal of this app was to create a simple content management system that allowing users to create an account & login, manage a public page featuring links, and share their public page with the world.
 
 
-## User Features
+### User Features
 - Account Creation & Management
 - Profile Customization
 - Links Creation & Management
@@ -33,7 +33,7 @@ The goal of this app was to create a simple content management system that allow
 - Soft Delete & Archive Page
 - Beautiful & Responsive UI
 
-## Technical Features
+### Technical Features
 
 - **NextJS 13**'& the new `/app` dir,
 - Server & Client Components
@@ -46,9 +46,77 @@ The goal of this app was to create a simple content management system that allow
 - Error Handling & Data Validation using **Zod**
 - Beautiful Loading UI & Toaster Notifications
 - Forms using debounce for better UX
-## Roadmap
 
-This project reached a state where it has fulfilled its purposes, which was to get familiar with NetJS13, nonetheless, here are a couple features I would like to add later on add:
+## Design Process & Considerations
+
+Due to this project being mostly a learning project, I didn't judge necessary to dive into a deep market analysis, although here's a couple of design considerations that guided the development of this project:
+
+- **Quick-to-load public pages:** The speed of loading of public pages is exceptionally important for this project.  Users are content creators mostly using apps such as Instagram and TikTok, and they concerned with getting as many clicks (conversions) as possible.  Fast page load is crucial to ensure a low bounce-rate.
+- **Mobile friendly:** It is crucial for this type of application to be as easy to use on mobile as it is on desktop, and especially on the landing page.  Most traffic is expected to come from websites such as Instagram or TikTok, the majority of which are mobile users.
+- **Analytics features**:  Users who make use of these kinds of apps are concerned with keeping tracks of statistics, therefore it would be important to consider adopting analytics features early on, as this might put the app at a serious disadvantage compared to the competition.
+
+### Features
+
+Before getting started with the wireframes & design, I went ahead and identified the core features of this application (MVP):
+
+1. Authentication System:
+    - Account Creation
+    - Login / Logout
+2. Managing Personal "Links" collection
+    - CRUD operations on the links
+    - Display of social media URLs
+3. Account Management
+    - Updating user information
+    - Account Deletion
+4. Public Page:
+    - Easy Sharable URL
+
+
+**Additional Features**
+
+1. Archive System: Allowing users to "soft" delete links, hence allowing them to keep track of stats easier.
+2. Analytics: Allowing the users to track how many clicks each individual link receives
+
+### User Journey
+
+Leaflink will be receiving 2 different types of users:
+1. **Creators:** They will be the main users, as they will be responsible to drive traffic to the application.
+2. **Visitors:** They will visit the website only briefly form clicking links from they favorite content creators on social media platforms (mainly Instagram and TikTok)
+
+![Leaflink User Journey & Screens](../../assets/portfolio/leaflink-user-journey.png)
+
+
+### Initial Low-Fidelity Wireframe
+
+From this user journey map, 4 main screens have been identified:
+
+1. Login
+2. Register
+3. Dashboard
+4. Public Creator Page
+
+For now, the analytics page will be left out of the design.
+
+![Leaflink Wireframes](../../assets/portfolio/leaflink-wireframe.png)
+
+### Style Guide
+
+![Leaflink Typography](../../assets/portfolio/leaflink-Typography.png)
+![Leaflink Colors](../../assets/portfolio/leaflink-Colors.png)
+![Leaflink Components](../../assets/portfolio/leaflink-Components.png)
+
+
+## High Fidelity Wireframe
+
+> Note: The original design has received many iterations during developement.  The feel and style have stayed similar, but the layouts have been changed and improved significantly.  Take a look at the [live demo](https://leaflink.vercel.app/) for a more up-to-date version.
+
+![Leaflink Components](../../assets/portfolio/leaflink-HiFi-Wireframe.png)
+
+
+
+## Conclusion & Futur Developement Ideas
+
+This project reached a state where it has fulfilled its purposes, which was to get familiar with NetJS13, nonetheless, here are a couple features I would like to maybe add in the future:
 
 - [ ] Google Authentication with **NextAuth.js**
 - [ ] Theme Customization for user's public page
@@ -56,7 +124,4 @@ This project reached a state where it has fulfilled its purposes, which was to g
 - [ ] Analytics display for All-times, Year, 30 days & 7 days
 - [ ] Adding custom images to links
 - [ ] Password Recovery System
-
-## Security & User Information Notice
-
-All of the user data for this web app are stored in a MongoDB Database, and passwords are being safely encrypted using **bcrypt**.
+- [ ] User's integrating Facebook Pixels & Google Analytics
