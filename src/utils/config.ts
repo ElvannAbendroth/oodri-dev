@@ -1,14 +1,35 @@
+import type { ButtonStyle } from "@components/ui/button.astro";
+
 interface SiteConfig {
   hero: any;
   nav: MenuItem[];
 }
 
-type MenuItem = {
+interface Hero {
+  headline: string;
+  subtitle: string;
+  cta: CTA[];
+}
+
+interface CTA {
+  href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+  class?: string;
+  rel?: string;
+  icon?: {
+    class?: string;
+    name?: string;
+  };
+  label: string;
+  style: ButtonStyle;
+}
+
+interface MenuItem {
   title: string;
   path: string;
   children?: MenuItem[];
   download?: boolean;
-};
+}
 
 export const config: SiteConfig = {
   hero: {

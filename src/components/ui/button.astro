@@ -1,12 +1,14 @@
 ---
-interface Props {
+export interface ButtonProps {
   size?: "sm" | "md" | "lg";
   block?: boolean;
-  style?: "outline" | "primary" | "inverted" | "subtle";
+  style?: ButtonStyle;
   class?: string;
   [x: string]: any;
   isActive?: boolean;
 }
+
+export type ButtonStyle = "outline" | "primary" | "inverted" | "subtle";
 
 const {
   size = "md",
