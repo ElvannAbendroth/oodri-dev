@@ -7,7 +7,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://oodri-dev-git-url-search-params-elvannabendroth.vercel.app/",
+  site: "https://oodri.dev",
   integrations: [tailwind(), mdx(), sitemap(), react()],
   //output & adapter make site SSR and allows searchParams
 
