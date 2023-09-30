@@ -29,6 +29,8 @@ function filterByCategory(entries, category) {
 publishedPortfolioEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
+
+const astro = Astro.url;
 ---
 
 <Layout title="Portfolio">
@@ -41,9 +43,18 @@ publishedPortfolioEntries.sort(function (a, b) {
     </Sectionhead>
     <main class="mt-16 flex flex-col gap-6">
       {console.log("⭐⭐⭐⭐⭐ Search params: ", search)}
+      <div class="flex justify-center flex-col gap-6">
+        <code class="bg-slate-600 text-white rounded-md shadow"
+          >{JSON.stringify(search, undefined, 2)}</code
+        >
+        <code class="bg-slate-600 text-white rounded-md shadow"
+          >{JSON.stringify(astro, undefined, 2)}</code
+        >
+      </div>
+
       <div class="flex flex-col gap-4">
         <div class="flex gap-2 justify-center">
-          <!-- <Link
+          <Link
             href="/portfolio"
             size="sm"
             style="subtle"
@@ -78,7 +89,7 @@ publishedPortfolioEntries.sort(function (a, b) {
             style="subtle"
             isActive={search === "Static Site" && true}>
             Static Site
-          </Link> -->
+          </Link>
         </div>
       </div>
       <PortfolioEntries
