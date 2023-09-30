@@ -33,6 +33,20 @@ publishedPortfolioEntries.sort(function (a, b) {
 const astro = Astro.url;
 ---
 
+<script>
+  let nonAstro = window.location.search;
+
+  window.addEventListener("popstate", function () {
+    console.log("url changed on client side");
+    nonAstro = window.location.search;
+  });
+
+  window.addEventListener("load", (evt) => {
+    console.log("I'm on client side, I think");
+    document.getElementById("pekka")!.innerHTML = nonAstro;
+  });
+</script>
+
 <Layout title="Portfolio">
   <Container>
     <Sectionhead>
@@ -52,6 +66,7 @@ const astro = Astro.url;
         <code class="bg-slate-600 text-white rounded-md shadow"
           >{JSON.stringify(import.meta.env.SITE, undefined, 2)}</code
         >
+        <div id="pekka"></div>
       </div>
 
       <div class="flex flex-col gap-4">
