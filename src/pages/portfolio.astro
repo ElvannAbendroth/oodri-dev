@@ -6,7 +6,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import PortfolioEntries from "@components/portfolio-entries.astro";
 import Link from "@components/ui/link.astro";
 
-export const prerender = true; //in SSR mode allows searchParams
+//export const prerender = true; //in SSR mode allows searchParams
 
 let search = Astro.url.searchParams.get("search")! || "";
 
