@@ -12,5 +12,7 @@ export default defineConfig({
   //output & adapter make site SSR and allows searchParams
 
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    includeFiles: ["./src/asset/**"],
+  }),
 });
