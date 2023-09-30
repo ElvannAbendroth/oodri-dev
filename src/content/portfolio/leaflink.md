@@ -47,17 +47,17 @@ The goal of this app was to create a simple content management system that allow
 - Beautiful Loading UI & Toaster Notifications
 - Forms using debounce for better UX
 
-## Design Process & Considerations
+## Design Considerations
 
 Due to this project being mostly a learning project, I didn't judge necessary to dive into a deep market analysis, although here's a couple of design considerations that guided the development of this project:
 
 - **Quick-to-load public pages:** The speed of loading of public pages is exceptionally important for this project.  Users are content creators mostly using apps such as Instagram and TikTok, and they concerned with getting as many clicks (conversions) as possible.  Fast page load is crucial to ensure a low bounce-rate.
 - **Mobile friendly:** It is crucial for this type of application to be as easy to use on mobile as it is on desktop, and especially on the landing page.  Most traffic is expected to come from websites such as Instagram or TikTok, the majority of which are mobile users.
-- **Analytics features**:  Users who make use of these kinds of apps are concerned with keeping tracks of statistics, therefore it would be important to consider adopting analytics features early on, as this might put the app at a serious disadvantage compared to the competition.
+- **Analytics Display**:  Users who make use of these kinds of apps are concerned with keeping tracks of statistics, therefore it would be important to consider adopting analytics features early on, as this might put the app at a serious disadvantage compared to the competition.
 
-### Features
+### Core Features (MVP)
 
-Before getting started with the wireframes & design, I went ahead and identified the core features of this application (MVP):
+Before getting started with the wireframes & design, I first identified the core features of this application:
 
 1. Authentication System:
     - Account Creation
@@ -69,7 +69,8 @@ Before getting started with the wireframes & design, I went ahead and identified
     - Updating user information
     - Account Deletion
 4. Public Page:
-    - Easy Sharable URL
+    - View Creator Links
+    
 
 
 **Additional Features**
