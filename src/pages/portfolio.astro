@@ -42,13 +42,15 @@ const astro = Astro.url;
       </Fragment>
     </Sectionhead>
     <main class="mt-16 flex flex-col gap-6">
-      {console.log("⭐⭐⭐⭐⭐ Search params: ", search)}
       <div class="flex justify-center flex-col gap-6">
         <code class="bg-slate-600 text-white rounded-md shadow"
           >{JSON.stringify(search, undefined, 2)}</code
         >
         <code class="bg-slate-600 text-white rounded-md shadow"
           >{JSON.stringify(astro, undefined, 2)}</code
+        >
+        <code class="bg-slate-600 text-white rounded-md shadow"
+          >{JSON.stringify(import.meta.env.SITE, undefined, 2)}</code
         >
       </div>
 
