@@ -1,0 +1,147 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Link from "@components/ui/link.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon";
+
+const education = [
+  {
+    title: "Full-stack Open Course",
+    location: "University of Helsinki",
+    years: "2023",
+    description:
+      "I have obtained the course certificate for (parts 1-7). Some of the material includes React, NodeJS, Express & testing libraries.",
+  },
+  {
+    title: "Computer Science Studies",
+    location: "University of Laval",
+    years: "2016-2017",
+    description:
+      "I took Bachelor's level courses and learned the basics of programming (Python), OOP (C++), relational modelling (UML) and the basics of computing and Assembly (ARM).",
+  },
+  {
+    title: "Bachelor's Degree in Music",
+    location: "University of Montreal",
+    years: "2012-2016",
+    description:
+      "I obtained a Bachelor's Degree in music, specialized in harp & classical singing performance.",
+  },
+];
+
+const skills = [
+  { label: "HTML & CSS", type: "frontend" },
+  { label: "ReactJS", type: "frontend" },
+  { label: "NextJS", type: "framework" },
+  { label: "Javascript & Typescript", type: "frontend" },
+  { label: "Tailwind", type: "frontend" },
+  { label: "Figma", type: "design" },
+  { label: "VSCode", type: "tool" },
+  { label: "Github/Git", type: "tool" },
+  { label: "NodeJS", type: "tool" },
+  { label: "ExpressJS", type: "backend" },
+  { label: "MongoDB", type: "backend" },
+  { label: "Wordpress", type: "framework" },
+  { label: "Adobe Photoshop", type: "design" },
+];
+const languages = [
+  { label: "English", level: "native/fluent" },
+  { label: "French", level: "native/fluent" },
+  { label: "Finnish", level: "intermediate - B.2" },
+];
+---
+
+<Layout title="Resume">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Resume</Fragment>
+      <Fragment slot="desc">Oodri, Full-stack Web Developer</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col mx-auto max-w-4xl mt-16">
+      <h2 class="font-medium text-2xl text-gray-800">Summary</h2>
+      <p class="text-lg leading-relaxed text-slate-500 mt-3">
+        Hi! My name is Audrey and I'm a junior web developer. I took courses
+        Computer Science at the Bachelor's level, after which I decided to
+        pursue my career in music.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-500 mt-3">
+        In the last year, I made the decision to shift my career back to web
+        development and began University studies again.
+      </p>
+
+      <p class="text-lg leading-relaxed text-slate-500 mt-3">
+        Check out my previous projects on my <a
+          class="text-black underline hover:primary-hover"
+          href="/portfolio">
+          portfolio page</a
+        >, which includes also design & UI/UX projects.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Education</h2>
+
+        <ul>
+          {
+            education.map((item) => {
+              return (
+                <li>
+                  <h3 class="font-medium text-xl text-gray-800 mt-5">
+                    {item.title}
+                  </h3>
+                  <div class="flex items-center mt-2 space-x-2 text-gray-600">
+                    <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+                    <span>
+                      {item.location}, {item.years}
+                    </span>
+                  </div>
+
+                  <p class="flex items-center mt-2 space-x-2 text-slate-500">
+                    {item.description}
+                  </p>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </div>
+      <div>
+        <div>
+          <h2 class="font-medium text-2xl text-gray-800">Skills</h2>
+          <div class="pt-5 flex flex-wrap gap-2">
+            {
+              skills.map((skill) => {
+                return (
+                  <li class="bg-slate-100 text-gray-800 py-1 px-2 rounded-md list-none">
+                    {skill.label}
+                  </li>
+                );
+              })
+            }
+          </div>
+        </div>
+        <h2 class="font-medium text-2xl text-gray-800 mt-8">Languages</h2>
+        <div class="pt-5 flex flex-wrap gap-2">
+          {
+            languages.map((skill) => {
+              return (
+                <li class="bg-slate-100 text-gray-800 py-1 px-2 rounded-md list-none">
+                  {skill.label}{" "}
+                  <span class="text-sm text-gray-500">({skill.level})</span>
+                </li>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center pt-12">
+      <Button href="/portfolio">View Portfolio Projects</Button>
+    </div>
+  </Container>
+</Layout>
