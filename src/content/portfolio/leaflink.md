@@ -14,6 +14,7 @@ links: {
     demo: 'https://leaflink.vercel.app/',
     github: 'https://github.com/ElvannAbendroth/leaflink'
 }
+featured: true
 ---
 
 

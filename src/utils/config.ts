@@ -1,14 +1,14 @@
 import type { ButtonStyle } from "@components/ui/button.astro";
 
 interface SiteConfig {
-  hero: any;
+  hero: Hero;
   nav: MenuItem[];
 }
 
 interface Hero {
   headline: string;
   subtitle: string;
-  cta: CTA[];
+  ctas: CTA[];
 }
 
 interface CTA {
@@ -22,6 +22,7 @@ interface CTA {
   };
   label: string;
   style: ButtonStyle;
+  size?: string;
 }
 
 interface MenuItem {
@@ -86,10 +87,6 @@ export const config: SiteConfig = {
       title: "Portfolio",
       path: "/portfolio",
     },
-    // {
-    //   title: "Blog",
-    //   path: "/blog",
-    // },
     {
       title: "Contact",
       path: "/contact",

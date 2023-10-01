@@ -14,6 +14,7 @@ links: {
     demo: 'https://elvannstore.com/',
     github: 'https://elvannstore.com/'
 }
+featured: false
 ---
 
 ## About this Project

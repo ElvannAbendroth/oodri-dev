@@ -14,6 +14,7 @@ links: {
     demo: 'https://opetellaan-suomea.vercel.app/',
     github: 'https://github.com/ElvannAbendroth/opetellaan-suomea'
 }
+featured: false
 ---
 
 

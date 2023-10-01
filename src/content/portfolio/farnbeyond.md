@@ -15,6 +15,7 @@ links: {
     github: 'https://github.com/farnbeyond/farn-beyond',
     behance: 'https://www.behance.net/gallery/174262639/Farn-Beyond-Band-Landing-Page-Redesign'
 }
+featured: false
 ---
 
 ## About This Project

@@ -32,6 +32,7 @@ const portfolioCollection = defineCollection({
       category: z.string(),
       tags: z.array(z.string()),
       stack: z.array(z.string()),
+      featured: z.boolean(),
       links: z
         .object({
           demo: z.string(),

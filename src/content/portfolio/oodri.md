@@ -14,6 +14,7 @@ links: {
     demo: 'http://www.oodri.dev',
     github: 'https://github.com/ElvannAbendroth/oodri-dev'
 }
+featured: false
 ---
 
 ## Project Overview

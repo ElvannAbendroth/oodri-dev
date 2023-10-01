@@ -13,6 +13,7 @@ stack: [Wordpress]
 links: {
     demo: 'https://elvann.com/',
 }
+featured: false
 ---
 
 ## About this Project

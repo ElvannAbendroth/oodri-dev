@@ -31,6 +31,14 @@ publishedPortfolioEntries.sort(function (a, b) {
 });
 
 const astro = Astro.url;
+
+const categories = [
+  "",
+  "Full-stack App",
+  "UI/UX Design",
+  "E-Commerce Store",
+  "Static Site",
+];
 ---
 
 <Layout title="Portfolio">
@@ -43,43 +51,24 @@ const astro = Astro.url;
     </Sectionhead>
     <main class="mt-16 flex flex-col gap-6">
       <div class="flex flex-col gap-4">
-        <div class="flex gap-2 justify-center">
-          <Link
-            href="/portfolio"
-            size="sm"
-            style="subtle"
-            isActive={search === "" && true}>
-            All
-          </Link>
-          <Link
-            id="link-fullstack"
-            href="/portfolio/?search=Full-stack App"
-            size="sm"
-            style="subtle"
-            isActive={search === "Full-stack App" && true}>
-            Full-stack App
-          </Link>
-          <Link
-            href="/portfolio/?search=UI/UX Design"
-            size="sm"
-            style="subtle"
-            isActive={search === "UI/UX Design" && true}>
-            UI/UX
-          </Link>
-          <Link
-            href="/portfolio/?search=E-Commerce Store"
-            size="sm"
-            style="subtle"
-            isActive={search === "E-Commerce Store" && true}>
-            E-Commerce
-          </Link>
-          <Link
-            href="/portfolio/?search=Static Site"
-            size="sm"
-            style="subtle"
-            isActive={search === "Static Site" && true}>
-            Static Site
-          </Link>
+        <div class="flex gap-2 justify-center flex-wrap">
+          {
+            categories.map((category) => {
+              return (
+                <Link
+                  href={
+                    category === ""
+                      ? "/portfolio"
+                      : `/portfolio/?search=${category}`
+                  }
+                  size="sm"
+                  style="subtle"
+                  isActive={search === category && true}>
+                  {category === "" ? "All" : category}
+                </Link>
+              );
+            })
+          }
         </div>
       </div>
       <PortfolioEntries

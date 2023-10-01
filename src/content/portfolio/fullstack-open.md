@@ -16,6 +16,7 @@ links:
     demo: "https://fo-blogapp.fly.dev/",
     github: "https://github.com/ElvannAbendroth/BlogApp",
   }
+featured: false
 ---
 
 ## Summary

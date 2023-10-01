@@ -13,6 +13,7 @@ stack: [Figma]
 links: {
     behance: 'https://www.behance.net/gallery/174220599/Jekylls-Homepage-Redesign',
 }
+featured: true
 ---
 
 ![Jekyll Homepage Redesign](../../assets/portfolio/jekyll-homepage.png)
