@@ -6,8 +6,8 @@ image: {
     src: "/src/assets/portfolio/opetellaan-suomea.jpg",
     alt: "Opetellaan Suomea"
 }
-publishDate: "2023-09-25 11:39"
-category: "Full-stack App"
+publishDate: "2023-09-07 11:39"
+category: "Static Site"
 tags: []
 stack: [NextJS 13, Tailwind, Vercel]
 links: {

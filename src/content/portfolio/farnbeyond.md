@@ -6,7 +6,7 @@ image: {
     src: "/src/assets/portfolio/farnbeyond.jpg",
     alt: "Far'n Beyond Landing Page"
 }
-publishDate: "2023-09-07 15:39"
+publishDate: "2023-09-05 15:39"
 category: "Static Site"
 tags: []
 stack: [NextJS, Tailwind, Contentful ]
