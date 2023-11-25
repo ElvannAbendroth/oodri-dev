@@ -79,10 +79,10 @@ export const config: SiteConfig = {
     //     { title: "404 Page", path: "/404" },
     //   ],
     // },
-    {
-      title: "About",
-      path: "/about",
-    },
+    // {
+    //   title: "About",
+    //   path: "/about",
+    // },
     {
       title: "Resume",
       path: "/resume",

@@ -1,7 +1,6 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
-import Button from "@components/ui/button.astro";
 import Link from "@components/ui/link.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
@@ -12,7 +11,7 @@ const education = [
     location: "University of Helsinki",
     years: "2023",
     description:
-      "I have obtained the course certificate for (parts 1-7). Some of the material includes React, NodeJS, Express & testing libraries.",
+      "I'm currently studying modern full-stack development in this course endorsed by Houston, Unity & Terveystalo.  I have obtained the certificat  for parts 1 to 8.",
   },
   {
     title: "Computer Science Studies",
@@ -34,16 +33,19 @@ const skills = [
   { label: "HTML & CSS", type: "frontend" },
   { label: "ReactJS", type: "frontend" },
   { label: "NextJS", type: "framework" },
-  { label: "Javascript & Typescript", type: "frontend" },
+  { label: "Javascript", type: "frontend" },
+  { label: "Typescript", type: "frontend" },
   { label: "Tailwind", type: "frontend" },
+  { label: "Wordpress", type: "framework" },
   { label: "Figma", type: "design" },
-  { label: "VSCode", type: "tool" },
   { label: "Github/Git", type: "tool" },
+  { label: "CI/CD", type: "tool" },
   { label: "NodeJS", type: "tool" },
   { label: "ExpressJS", type: "backend" },
+  { label: "REST API", type: "backend" },
+  { label: "GraphQL & Apollo", type: "backend" },
+  { label: "CI/CD", type: "backend" },
   { label: "MongoDB", type: "backend" },
-  { label: "Wordpress", type: "framework" },
-  { label: "Adobe Photoshop", type: "design" },
 ];
 const languages = [
   { label: "English", level: "native/fluent" },
@@ -62,22 +64,26 @@ const languages = [
     <div class="flex flex-col mx-auto max-w-4xl mt-16">
       <h2 class="font-medium text-2xl text-gray-800">Summary</h2>
       <p class="text-lg leading-relaxed text-slate-500 mt-3">
-        Hi! My name is Audrey and I'm a junior web developer. I took courses
-        Computer Science at the Bachelor's level, after which I decided to
-        pursue my career in music.
+        I am a full-stack developer based in Helsinki looking to join a team of
+        developers. Over 10 years running my own businesses I have sharpened
+        project management and client relationship skills and developing deeply
+        customized web solutions to handle marketing, user accounts, and systems
+        management.
       </p>
 
       <p class="text-lg leading-relaxed text-slate-500 mt-3">
-        In the last year, I made the decision to shift my career back to web
-        development and began University studies again.
+        In my work, I love bridging the gap between feature implementation and
+        elegant front-end user experiences with the help of my technical skills,
+        design & marketing experience. Lately, NextJS has been at the center of
+        my interests; it has facilitated the integration of back-end logic with
+        the front-end, data management and scalable deployement with Gihub &
+        Vercel.
       </p>
 
       <p class="text-lg leading-relaxed text-slate-500 mt-3">
-        Check out my previous projects on my <a
-          class="text-black underline hover:primary-hover"
-          href="/portfolio">
-          portfolio page</a
-        >, which includes also design & UI/UX projects.
+        I'm currently studying the full-stack developement course offered but
+        the University of Helsinki, which has been endorsed by Houston, Unity &
+        Terveystalo.
       </p>
     </div>
 
@@ -141,7 +147,7 @@ const languages = [
     </div>
 
     <div class="flex justify-center pt-12">
-      <Button href="/portfolio">View Portfolio Projects</Button>
+      <Link href="/portfolio">View Portfolio Projects</Link>
     </div>
   </Container>
 </Layout>
