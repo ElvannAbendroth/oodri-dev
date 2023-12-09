@@ -20,6 +20,8 @@ const publishedPortfolioEntries = await getCollection(
 
 function filterByCategory(entries, category) {
   if (category === "") return entries;
+  if (category === "Featured")
+    return entries.filter((entry) => entry.data.featured);
   return entries.filter((entry) => {
     return entry.data.category === category;
   });
@@ -34,6 +36,7 @@ const astro = Astro.url;
 
 const categories = [
   "",
+  "Featured",
   "Full-stack App",
   "UI/UX Design",
   "E-Commerce Store",
@@ -54,6 +57,17 @@ const categories = [
         <div class="flex gap-2 justify-center flex-wrap">
           {
             categories.map((category) => {
+              if (category === "Featured") {
+                return (
+                  <Link
+                    href={`/portfolio/?search=${category}`}
+                    size="sm"
+                    style="subtle"
+                    isActive={search === category && true}>
+                    {category}
+                  </Link>
+                );
+              }
               return (
                 <Link
                   href={

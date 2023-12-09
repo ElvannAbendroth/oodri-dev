@@ -41,8 +41,11 @@ const ctas = config.hero.ctas;
               rel={cta.rel || "noopener"}
               style={cta.style as LinkStyle}
               size={cta.size}
-              download={cta.download}>
-              <Icon class={cta.icon.class} name={cta.icon.name} />
+              download={cta?.download && cta.download}>
+              <Icon
+                class={cta.icon && cta.icon.class}
+                name={cta.icon && cta.icon.name}
+              />
 
               {cta.label}
             </Link>

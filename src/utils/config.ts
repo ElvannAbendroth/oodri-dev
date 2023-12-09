@@ -23,6 +23,7 @@ interface CTA {
   label: string;
   style: ButtonStyle;
   size?: string;
+  download?: string;
 }
 
 interface MenuItem {
@@ -89,7 +90,7 @@ export const config: SiteConfig = {
     },
     {
       title: "Portfolio",
-      path: "/portfolio",
+      path: "/portfolio/?search=Featured",
     },
     {
       title: "Contact",
