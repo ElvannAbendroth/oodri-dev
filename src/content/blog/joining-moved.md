@@ -16,7 +16,7 @@ At the turn of 2024, I'm happy to be joining [MovEd](https://www.moved.fi/) to h
 
 I first found out about the organization during my first "She got This" meeting with my mentor [Hannele Mennala](https://www.linkedin.com/in/hannelemennala/), which turned out to be in need of a web developer for managing and updating the content on their marketing website since theirs had just left.  She kindly asked me to consider joining the team, besides it being an excellent opportunity to meet new people in my industry in Finland.
 
-Despite having worked closely with web technologies and design, working for a team and an organization is a pretty new experience to me; I've previously worked as a freelance teacher and recording musician and have been mostly self reliant for my business operations.  Now that I'm transitioning to web development and UI/UX design, I'm really excited to meet people in the industry and gain insight and experience from working with a team, especially on dedicated to a cause I'm so glad to be able to support.
+Despite having worked closely with web technologies and design, working for a team and an organization is a pretty new experience to me; I've previously worked as a freelance teacher and recording musician and have been mostly self reliant for my business operations.  Now that I'm transitioning to web development and UI/UX design, I'm really excited to meet people in the industry and gain insight and experience in working with a team.  I'm especially happy to be contributing to a cause I'm so happy to support.
 
 ## What is MovEd?
 
