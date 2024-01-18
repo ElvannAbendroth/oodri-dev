@@ -26,4 +26,10 @@ Previously, I have been active in different entrepreneurial programs; I have rec
 
 But after a few years of operation and the economic recession, finding work in the initial industry I had set for myself (music, audio & entertainement), my growth staggered and as my main operations were with international clients, finding new clients willing to pay a living wage for Finnish standards became increasingly harder.
 
-Today, I was excited to meet with my mentor, [Hannele Mennala](), senior business executive, business coach & head of MovEd collective.  Meeting with her was such a delight, and I'm excited to start the work together.
+## Event & Takeaways
+
+Today, I was excited to meet with my mentor, [Hannele Mennala](), senior business executive, business coach & head of MovEd collective.  Meeting with her was such a delight, and I'm excited to start the work together.  After the presentation we had about 15 minutes to introduce ourselves and schedule the first meeting!
+
+I've very excited to get started and expand my horizons with new ideas and approaches.  I'm coming into this project with a lot of commitment, trust, and willingness to challenge myself and go out my comfort zones.
+
+While at times I recognize it can be difficult to change my mind and trust outside perspectives, I'm coming into this programme ready to challenge some of my beliefs and try things in a different way; Change doesn't happen in comfort.

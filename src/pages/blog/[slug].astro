@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
+import Icon from "astro-icon";
+import { Image } from "astro:assets";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -21,6 +23,12 @@ export const prerender = true;
 <Layout title={entry.data.title}>
   <Container>
     <div class="mx-auto max-w-3xl mt-14">
+      <a
+        href="/blog"
+        class="flex gap-2 items-center text-gray-500 hover:text-gray-600 tracking-wider text-sm mb-10 transition-all">
+        <Icon class="h-4 w-4" name="icon-park-outline:left" />
+        <span class="">back to blog</span>
+      </a>
       <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
         {entry.data.category}
       </span>
@@ -28,7 +36,7 @@ export const prerender = true;
         class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
         {entry.data.title}
       </h1>
-      <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">
+      <div class="flex gap-2 my-3 items-center flex-wrap md:flex-nowrap">
         <span class="text-gray-400">
           {entry.data.author}
         </span>
@@ -50,7 +58,17 @@ export const prerender = true;
     </div>
 
     <div
-      class="prose prose-lg mt-6 prose-img:rounded-md prose-img:border mx-auto prose-code:mx-2 prose-pre:leading-5">
+      class="prose prose-lg mt-6 prose-img:rounded-md prose-img:border mx-auto prose-pre:leading-5">
+      <Image
+        transition:name={`image-${entry.data.title}`}
+        src={entry.data.image.src}
+        class="w-full rounded-md border mb-6"
+        alt={entry.data.image.alt}
+        sizes="(max-width: 800px) 100vw, 500px"
+        height={1920}
+        width={1080}
+        quality={60}
+      />
       <Content />
     </div>
     <div class="text-center mt-8">
