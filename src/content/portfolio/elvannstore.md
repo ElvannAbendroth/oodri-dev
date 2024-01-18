@@ -15,6 +15,7 @@ links: {
     github: 'https://elvannstore.com/'
 }
 featured: true
+role: 'Owner, Web developer and UI/UX designer'
 ---
 
 ## Project & Requirements

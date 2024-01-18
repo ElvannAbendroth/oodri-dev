@@ -18,9 +18,9 @@ publishedBlogEntries.sort(function (a, b) {
 <Layout title="Blog">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">Blog</Fragment>
       <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
+        I write about my coding journey: problems, challenges, learnings & more.
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
@@ -48,15 +48,15 @@ publishedBlogEntries.sort(function (a, b) {
                     </h2>
 
                     <div class="flex gap-2 mt-3">
-                      <span class="text-gray-400">
-                        {blogPostEntry.data.author}
-                      </span>
-                      <span class="text-gray-400">• </span>
                       <time
                         class="text-gray-400"
                         datetime={blogPostEntry.data.publishDate.toISOString()}>
                         {blogPostEntry.data.publishDate.toDateString()}
                       </time>
+                      <span class="text-gray-400">• </span>
+                      <span class="text-gray-400">
+                        {blogPostEntry.data.tags.join(", ")}
+                      </span>
                     </div>
                   </div>
                 </div>

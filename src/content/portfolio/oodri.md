@@ -14,7 +14,8 @@ links: {
     demo: 'http://www.oodri.dev',
     github: 'https://github.com/ElvannAbendroth/oodri-dev'
 }
-featured: true
+featured: false
+role: 'Web developer & UI/UX designer'
 ---
 
 ## Project Overview

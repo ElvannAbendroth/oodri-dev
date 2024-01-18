@@ -15,6 +15,7 @@ links: {
     github: 'https://github.com/ElvannAbendroth/opetellaan-suomea'
 }
 featured: false
+role: 'Owner, Web developer and UI/UX designer'
 ---
 
 

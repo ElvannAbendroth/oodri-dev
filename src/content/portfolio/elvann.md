@@ -14,6 +14,7 @@ links: {
     demo: 'https://elvann.com/',
 }
 featured: false
+role: 'Owner, Web developer and UI/UX designer'
 ---
 
 ## About this Project

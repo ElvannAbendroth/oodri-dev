@@ -17,6 +17,7 @@ links:
     github: "https://github.com/ElvannAbendroth/BlogApp",
   }
 featured: false
+role: 'Student & Web Developer'
 ---
 
 ## Summary

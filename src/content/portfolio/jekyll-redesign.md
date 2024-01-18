@@ -1,7 +1,7 @@
 ---
 draft: false
 title: "Landing Page Redesign for Jekyll Blog"
-snippet: "A Landing Page redesign project for Jekyll"
+snippet: "A Landing Page redesign project for Jekyll's blogging platform."
 image: {
     src: "/src/assets/portfolio/jekyll.png",
     alt: "Jekyll Blog"
@@ -14,6 +14,7 @@ links: {
     behance: 'https://www.behance.net/gallery/174220599/Jekylls-Homepage-Redesign',
 }
 featured: true
+role: 'UI/UX Designer'
 ---
 
 ![Jekyll Homepage Redesign](../../assets/portfolio/jekyll-homepage.png)

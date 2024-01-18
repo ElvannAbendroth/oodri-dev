@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Leaflink"
+title: "Leaflink - Full-stack NextJS Application with Auth & CMS"
 snippet: "A Linktree clone build with NextJS 13, Tailwind, Radix UI & MongoDB"
 image: {
     src: "/src/assets/portfolio/leaflink.jpg",
@@ -15,6 +15,7 @@ links: {
     github: 'https://github.com/ElvannAbendroth/leaflink'
 }
 featured: true
+role: 'Full-stack Web developer & UI/UX designer'
 ---
 
 

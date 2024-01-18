@@ -1,9 +1,28 @@
 ---
+import heroImage from "../assets/headshot-1.jpg";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Link from "@components/ui/link.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import { getCollection, getEntry } from "astro:content";
+
+// Filter portfolio entries with 'draft: false' & date before current date
+const publishedPortfolioEntries = await getCollection(
+  "portfolio",
+  ({ data }) => {
+    return !data.draft && data.publishDate < new Date();
+  },
+);
+
+function filterByCategory(entries, category) {
+  if (category === "") return entries;
+  if (category === "Featured")
+    return entries.filter((entry) => entry.data.featured);
+  return entries.filter((entry) => {
+    return entry.data.category === category;
+  });
+}
 
 const education = [
   {
@@ -14,7 +33,7 @@ const education = [
       "I'm currently studying modern full-stack development in this course endorsed by Houston, Unity & Terveystalo.  I have obtained the certificat  for parts 1 to 8.",
   },
   {
-    title: "Computer Science Studies",
+    title: "Computer Science (Bachelor's Studies)",
     location: "University of Laval",
     years: "2016-2017",
     description:
@@ -29,7 +48,7 @@ const education = [
   },
 ];
 
-const skills = [
+const technologies = [
   { label: "HTML & CSS", type: "frontend" },
   { label: "ReactJS", type: "frontend" },
   { label: "NextJS", type: "framework" },
@@ -46,64 +65,54 @@ const skills = [
   { label: "GraphQL & Apollo", type: "backend" },
   { label: "CI/CD", type: "backend" },
   { label: "MongoDB", type: "backend" },
+  { label: "Framer Motion", type: "library" },
+  { label: "NextAuthJS", type: "library" },
 ];
+
 const languages = [
   { label: "English", level: "native/fluent" },
   { label: "French", level: "native/fluent" },
   { label: "Finnish", level: "intermediate - B.2" },
 ];
+
+const page = await getEntry("page", "about");
+const { Content } = await page.render();
+
+const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
+  a.data.publishDate > b.data.publishDate ? -1 : 1,
+);
 ---
 
 <Layout title="Resume">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Resume</Fragment>
-      <Fragment slot="desc">Oodri, Full-stack Web Developer</Fragment>
+      <Fragment slot="desc">Audrey Downey, Full-stack web developer</Fragment>
     </Sectionhead>
 
-    <div
-      class="flex flex-col mx-auto max-w-4xl mt-16 prose prose-p:text-lg prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
-      <h2 class="font-medium text-2xl text-gray-800">About</h2>
-      <p>
-        I am a full-stack developer based in Helsinki looking to join a team of
-        developers. Over 10 years of running my own businesses, I have sharpened
-        project management and client relationship skills. I've been developing
-        customized web solutions to handle marketing, user accounts, and systems
-        management.
-      </p>
-
-      <p>
-        I'm currently going through the full-stack developement course offered
-        by the University of Helsinki, which is endorsed by known companies
-        including Houston, Unity & Terveystalo. I have completed the base
-        certificate as well as the Typescript & GraphQL certificates.
-      </p>
-
-      <p>
-        What I love most in developement is bridging the gap between feature
-        implementation and elegant front-end user experiences with the help of
-        my technical skills, design & marketing experience. Lately, NextJS has
-        been at the center of my interests; it has facilitated the integration
-        of back-end logic with the front-end, data management and scalable
-        deployement with Gihub & Vercel.
-      </p>
-      <p>
-        I believe having a cooperation-driven mindset and good communication are
-        crutial for a team's success, hence I'm often finding myself naturally
-        stepping into a mediator role. I'm also a person with an intiatiable
-        drive to improve my knowledge and technical skills. I thrive in
-        environnements that promote independence and creative problem solving.
-      </p>
-
-      <p>
-        When I'm not coding, you can find me playing music, singing, doing
-        digital illustrations and playing video games.
-      </p>
+    <div class="w-full flex justify-center mt-8">
+      <img
+        transition:name="headshot"
+        src={heroImage.src}
+        alt="Astronaut in the air"
+        sizes="(max-width: 300px) 100vw, 300px"
+        loading="eager"
+        class="rounded-full max-w-[250px]"
+      />
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+    <div
+      class="flex flex-col mx-auto max-w-4xl mt-8 prose prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
+      <h2 class="font-bold text-2xl text-gray-800">About</h2>
+
+      <Content />
+    </div>
+
+    <div
+      id="education-and-skills-section"
+      class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 print:grid-cols-2 print:break-before-page print:pt-16">
       <div>
-        <h2 class="font-medium text-2xl text-gray-800">Education</h2>
+        <h2 class="font-bold text-2xl text-gray-800">Education</h2>
 
         <ul>
           {
@@ -131,10 +140,10 @@ const languages = [
       </div>
       <div>
         <div>
-          <h2 class="font-medium text-2xl text-gray-800">Skills</h2>
+          <h2 class="font-bold text-2xl text-gray-800">Skills</h2>
           <div class="pt-5 flex flex-wrap gap-2">
             {
-              skills.map((skill) => {
+              technologies.map((skill) => {
                 return (
                   <li class="bg-slate-100 text-gray-800 py-1 px-2 rounded-md list-none">
                     {skill.label}
@@ -144,7 +153,7 @@ const languages = [
             }
           </div>
         </div>
-        <h2 class="font-medium text-2xl text-gray-800 mt-8">Languages</h2>
+        <h2 class="font-bold text-2xl text-gray-800 mt-8">Languages</h2>
         <div class="pt-5 flex flex-wrap gap-2">
           {
             languages.map((skill) => {
@@ -160,8 +169,58 @@ const languages = [
       </div>
     </div>
 
-    <div class="flex justify-center pt-12">
-      <Link href="/portfolio/?search=Featured">View Portfolio Projects</Link>
+    <div
+      id="experience-section"
+      class="flex flex-col mx-auto max-w-4xl mt-16 print:break-before-page print:pt-16">
+      <h2 class="font-bold text-2xl text-gray-800">Experience & Projects</h2>
+
+      <ul class="flex flex-col gap-4 mt-4">
+        {
+          filterByCategory(sortedProjects, "Featured").map((entry) => {
+            return (
+              <li class="flex flex-col gap-2 bg-gray-50  px-6 py-4 rounded-lg">
+                <a class="" href={`/projects/${entry.slug}`}>
+                  <h3 class="font-medium text-xl text-gray-800 hover:text-gray-500 transition-all">
+                    {entry.data.title}
+                  </h3>
+                </a>
+                <div class="flex space-x-2 text-gray-500 text-sm align-middle italic">
+                  <Icon
+                    class=" w-5 shrink-0 flex align-middle"
+                    name="fluent:person-20-filled"
+                  />
+                  <span class="m-1">{entry.data.role}</span>
+                </div>
+
+                <p class="flex items-center mt-2 space-x-2 text-slate-500">
+                  {entry.data.snippet}
+                </p>
+                <div class="flex gap-2 mt-3 print:hidden">
+                  <Link
+                    href={`/projects/${entry.slug}`}
+                    class="text-sm flex gap-2 items-center "
+                    style="primary"
+                    size="sm">
+                    <Icon class="w-4 h-4" name="mdi:eye" />
+                    View Project
+                  </Link>
+                </div>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+    <div class="flex justify-center pt-12 gap-3 print:hidden">
+      <Link href="/contact" style="outline">Get In Touch</Link>
+      <Link href="/projects/">View More Portfolio Projects</Link>
+    </div>
+    <!-- for print only -->
+    <div class="justify-center pt-12 gap-3 hidden print:flex">
+      <Link href="http://www.oodri.dev/contact" style="outline">
+        Get In Touch
+      </Link>
+      <Link href="http://www.oodri.dev/projects/">View More Projects</Link>
     </div>
   </Container>
 </Layout>

@@ -33,6 +33,7 @@ const portfolioCollection = defineCollection({
       tags: z.array(z.string()),
       stack: z.array(z.string()),
       featured: z.boolean(),
+      role: z.string(),
       links: z
         .object({
           demo: z.string(),
@@ -40,6 +41,21 @@ const portfolioCollection = defineCollection({
           behance: z.string(),
         })
         .deepPartial(),
+    }),
+});
+
+const pageCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean(),
+      title: z.string(),
+      image: z
+        .object({
+          src: image(),
+          alt: z.string(),
+        })
+        .deepPartial(),
+      publishDate: z.string().transform((str) => new Date(str)),
     }),
 });
 

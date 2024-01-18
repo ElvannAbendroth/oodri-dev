@@ -16,6 +16,7 @@ links: {
     behance: 'https://www.behance.net/gallery/174262639/Farn-Beyond-Band-Landing-Page-Redesign'
 }
 featured: false
+role: 'Full-stack Web developer & UI designer'
 ---
 
 ## About This Project

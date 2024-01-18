@@ -47,7 +47,7 @@ const categories = [
 <Layout title="Portfolio">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Portfolio Projects</Fragment>
+      <Fragment slot="title">Projects</Fragment>
       <Fragment slot="desc">
         Here's a list of recent projects I have worked on
       </Fragment>
@@ -60,7 +60,7 @@ const categories = [
               if (category === "Featured") {
                 return (
                   <Link
-                    href={`/portfolio/?search=${category}`}
+                    href={`/projects/?search=${category}`}
                     size="sm"
                     style="subtle"
                     isActive={search === category && true}>
@@ -72,8 +72,8 @@ const categories = [
                 <Link
                   href={
                     category === ""
-                      ? "/portfolio"
-                      : `/portfolio/?search=${category}`
+                      ? "/projects"
+                      : `/projects/?search=${category}`
                   }
                   size="sm"
                   style="subtle"
