@@ -12,28 +12,16 @@ author: "Audrey Downey"
 tags: [philosophy, exercise]
 ---
 
-My decision to transition from the music industry into web development was motivated by this question: **how to do something that I love and has meaning to me while being able to make a reliable income?** Is that even possible?
+> **How to do something that I love and has meaning to me while being able to make a reliable income?** Is that even possible?
 
-<!-- For me, transitioning from doing coding as a more serious option for the future was the answer, or at least part of it. -->
 
-In my previous coaching session with my mentor [Hannele Mennala](https://www.linkedin.com/in/hannelemennala/), we've established that one of the next step on my journey should be to clarify my vision further through this exercise.
+In my previous coaching session with my mentor [Hannele Mennala](https://www.linkedin.com/in/hannelemennala/), we've established that one of the next step on my journey as an entrepreneur should be to clarify my vision further through this exercise.
+
+As a creative, I've always had a million ideas and projects, but difficulty focusing on one thing at a time.  My hopes is that this exercise will help me **clarify my meaning and purpose**, which will in turn inform my decisions and trajectory in the tech world.  I also hope that by sharing my thought process while going through this exercise, I could help or inspiring other people who have been struggling with self-doubt like I have.
 
 ## IKIGAI 生きがい : A reason for being
 
 IKIGAI is a Japanese philosophical concept that describes a feeling of purpose and motivation in life.  The online research I've done so far led me to this exercise consisting of a 4-circle ven diagram:
-
-
- <!-- from following your passion, consists of 2 aspects:
-
-1. **Source**: which brings value to one's life
-2. **Meaning**: Feeling that one's life has value or meaning because of that source.
-
-Ikigai can be classified in 3 directions:
-
-1. **Social**: what is accepted by society through volunteering activities & community activities
-2. **Asocial**: what is not directly related to society, such as faith or self-discipline
-3. **Anti-social**: the basic motivation for living through dark emotions, such as hate or desire for vengeance. -->
-
 
 ![Ikigai Diagram](https://media.discordapp.net/attachments/1007918780594257953/1197862127420063754/ikigai-1.png?ex=65bccf0a&is=65aa5a0a&hm=f38fc8939a629f201c7907b9d09429ed1d0357e11e18bf9d652ab5bebe9c6846&=&format=webp&quality=lossless&width=671&height=671)
 
@@ -54,7 +42,7 @@ Then, where the circles converge, you can start realizing that:
 
 ### What do I Love?
 
-As we grow up and are faced with the reality of the world, it's easy to lose touch with the child within us.  For me, thinking back of who I used to be between the ages of 7-14 helped immensely and helped me get in touch with myself and what I truly enjoy doing when I'm not thinking about making money, or even about my own performance or long-term goal.  
+As we grow up and are faced with the reality of the world, it's easy to **lose touch with the child within us**.  For me, thinking back of who I used to be between the ages of 7-14 helped immensely with getting in touch with myself and what I truly enjoy doing when I'm not thinking about making money, performance goals.  
 
 It would have been really easy for me to get lost in limiting this list to a "tech work", as it's the area of my life I'm the most focused on right now, but doing so would also limit my thinking.
 
