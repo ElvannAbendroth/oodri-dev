@@ -3,7 +3,7 @@ draft: false
 title: "Opetellaan Suomea"
 snippet: "A language learning tool for Finnish learners."
 image: {
-    src: "/src/assets/portfolio/opetellaan-suomea.jpg",
+    src: "https://media.discordapp.net/attachments/1007918780594257953/1197996923458691102/opetellaan-suomea.jpg?ex=65bd4c94&is=65aad794&hm=ea27200ebade70ed9dae60c66c8506dbf782a9e55ee7796517113ea8acd72893&=&format=webp&width=1194&height=671",
     alt: "Opetellaan Suomea"
 }
 publishDate: "2023-09-07 11:39"

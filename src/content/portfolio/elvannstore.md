@@ -3,7 +3,7 @@ draft: false
 title: "E-Commerce Solution with PoD & Email Integrations"
 snippet: "An e-commerce store using Shopify, with Mailerlite and Printify Integrations."
 image: {
-    src: "/src/assets/portfolio/elvannstore.png",
+    src: "https://media.discordapp.net/attachments/1007918780594257953/1197996921755807744/elvannstore.png?ex=65bd4c93&is=65aad793&hm=5642862c7fe9aac28350af11e6f5f06803eb03809fe923c97b910ad0e0c0bc60&=&format=webp&quality=lossless&width=1194&height=671",
     alt: "Elvann's Store"
 }
 publishDate: "2023-01-10 15:39"

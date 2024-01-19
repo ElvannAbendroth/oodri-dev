@@ -3,7 +3,7 @@ draft: false
 title: "Far'n Beyond"
 snippet: "A simple landing page using NextJS 13 & Contentful as headless CMS"
 image: {
-    src: "/src/assets/portfolio/farnbeyond.jpg",
+    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197997116690276483/farnbeyond.jpg?ex=65bd4cc2&is=65aad7c2&hm=ca48c29bdaa956a60e5596dd694ecedb839e6057ad803293d257474810add3e2&",
     alt: "Far'n Beyond Landing Page"
 }
 publishDate: "2023-09-05 15:39"

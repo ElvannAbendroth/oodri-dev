@@ -3,7 +3,7 @@ draft: false
 title: "Leaflink - Full-stack NextJS Application with Auth & CMS"
 snippet: "A Linktree clone build with NextJS 13, Tailwind, Radix UI & MongoDB"
 image: {
-    src: "/src/assets/portfolio/leaflink.jpg",
+    src: "https://media.discordapp.net/attachments/1007918780594257953/1197996921227321456/leaflink.jpg?ex=65bd4c93&is=65aad793&hm=ce5d3583422608a7d058420398a92f015d479c42431b7e3d00b6641f10eddcef&=&format=webp&width=1194&height=671",
     alt: "Leaflink App"
 }
 publishDate: "2023-09-08 11:39"
