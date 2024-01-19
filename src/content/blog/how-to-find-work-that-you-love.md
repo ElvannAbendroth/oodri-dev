@@ -19,7 +19,7 @@ In my previous coaching session with my mentor [Hannele Mennala](https://www.lin
 
 As a creative, I've always had a million ideas and projects, but difficulty focusing on one thing at a time.  My hopes is that this exercise will help me **clarify my meaning and purpose**, which will in turn inform my decisions and trajectory in the tech world.  I also hope that by sharing my thought process while going through this exercise, I could help or inspiring other people who have been struggling with self-doubt like I have.
 
-## IKIGAI 生きがい : A reason for being
+## IKIGAI 生きがい : A Reason For Being
 
 IKIGAI is a Japanese philosophical concept that describes a feeling of purpose and motivation in life.  The online research I've done so far led me to this exercise consisting of a 4-circle ven diagram:
 
@@ -40,7 +40,7 @@ Then, where the circles converge, you can start realizing that:
 - What the world needs and can you get paid for is a **VOCATION**
 
 
-### What do I Love?
+## What Do I Love?
 
 As we grow up and are faced with the reality of the world, it's easy to **lose touch with the child within us**.  For me, thinking back of who I used to be between the ages of 7-14 helped immensely with getting in touch with myself and what I truly enjoy doing when I'm not thinking about making money, performance goals.  
 
@@ -54,7 +54,7 @@ Seemingly unrelated interests to my work slowly helped build a bridge in my thin
 
 Then I expanded my list with more abstract concepts such as "sharing my knowledge" and "compiling resources to help people" that I do often find myself going back to and enjoying.  A lot of those more abstract concepts often felt like they summarized some of the other more concrete things that I loved.
 
-## What am I Good At?
+## What Am I Good At?
 
 Skills often times overlap with what we love, although generally skills are acquired through training.  As a entrepreneur I've had the privilege of studying and exploring a lot around my interests, a lot of which turned into strong skills of mine.
 
@@ -66,7 +66,7 @@ As I brainstormed my skills, I noticed that there are multiple ways to frame ski
 
 for the IKIGAI exercise, I decided to focus on making a list of both **Practical Skills** and **Personal Skills**, but listing  **Technical Skills** could have also been a great idea.
 
-## What Can I Get Paid For
+## What Can I Get Paid For?
 
 Evaluating what is happening right now in the world served as a great starting point for me in this part of the exercise.  What are the current opportunities that are offered to me?  What shifts in culture have I recently witnessed?
 
@@ -91,7 +91,7 @@ The next part of the exercise is to connect the dots between the four categories
 
 > To create knowledge and improve access to human ingenuity and tools through helping businesses find their voice and share their knowledge with the world through building and designing beautiful websites with accessibility in mind.
 
-This could looks like improving the front-end UI and add new functionalities to a service or tool such as ”Streamer Songlist”, which would in turn not only help the business themselves, but also make it easier for music streamers and performers to explore new creative ways to share their art with their audiences.
+This could looks like improving the front-end UI and add new functionalities to a service or tool such as ”[Streamer Songlist](https://www.streamersonglist.com/)”, which would in turn not only help the business themselves, but also make it easier for music streamers and performers to explore new creative ways to share their art with their audiences.
 This could look like redesigning the UI and the user experience for Jekyll’s Blog platform, which could in return allow more people to get started with creating and hosting their own blog platform and in return share their unique world views and insight with the world.
 
 In other words, I’d love to contribute to **making the world a place where sharing knowledge is more accessible**, and I’d love to do that through helping businesses, artists and entrepreneurs build their web presence, my design and technical skills.  The idea of contributing to startup projects feels particularly meaningful to me, as they are the cradle of human creative potential, and because I feel like my unique contribution, skills and enthusiasm could really make a difference.
