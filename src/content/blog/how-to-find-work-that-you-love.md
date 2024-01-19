@@ -9,7 +9,7 @@ image: {
 publishDate: "2024-01-19 09:00"
 category: "Workshop"
 author: "Audrey Downey"
-tags: [webdev]
+tags: [philosophy, exercise]
 ---
 
 My decision to transition from the music industry into web development was motivated by this question: **how to do something that I love and has meaning to me while being able to make a reliable income?** Is that even possible?
