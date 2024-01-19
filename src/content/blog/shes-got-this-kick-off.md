@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Joining 'She's Got This' - Mentorship program for Immigrant Female Entrepreneurs"
+title: "Joining 'She's Got This' - Mentorship Program for Immigrant Female Entrepreneurs"
 snippet: ""
 image: {
     src: "https://cdn.discordapp.com/attachments/1015687534115815504/1197638549126791379/elvann_leaves_and_big_helping_mother_hands_Finland_blue_and_gre_f2577479-b7e3-4c9f-a900-c5e608be95e8.png?ex=65bbfed1&is=65a989d1&hm=b1a4bd5598538b4e427108a6dcfdc2535c0995ec34d78b20c55745249004ae23&",

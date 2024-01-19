@@ -9,7 +9,7 @@ What I love most in development is **bridging the gap between feature implementa
 
 ### Personality
 
-People describ me as driven, crative and adaptable.  In group situations, I often find myself stepping into a mediator role.  I believe cooperation and good communication are the heart of success for team projects.
+People describe me as driven, creative and adaptable.  In group situations, I often find myself stepping into a mediator role.  I believe cooperation and good communication are the heart of success for team projects.
 
 <!-- I believe cooperation and communication are the heart of a successful team, hence I'm often finding myself naturally stepping into a mediator role. I'm also a person with an insatiable drive to improve my knowledge and technical skills. I thrive in environments that promote independence and creative problem solving. -->
 
