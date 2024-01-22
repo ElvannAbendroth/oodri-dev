@@ -36,7 +36,7 @@ React Native is still new to me and I'll need to put a lot more time working wit
 ### ❌ Here are some of the thinks I've not liked as much:
 1. **Problems with making Nativewind work**: I spent a lot of time trying to make Nativewind work with the application without success. For a while I almost made it work, but the tailwind code wasn't getting properly compiled and I couldn't use the `tailwind.config.js` variables, despite following the instructions.
 
-2. **Debugging can be really tricky**:  Error messages given by the compile are ambiguous, it's often been really difficult to figure out where the problems were happening.  Maybe that's because I got so used to using Typescript over the past year?  At the beginning of the project, I also didn't manage to setup the React Native Debugger to work with my remote development environment (I wanted to develop using my physical iOS phone rather than an emulator).  
+2. **Debugging can be really tricky**:  Error messages given by the compiler are ambiguous, it's often been really difficult to figure out where the problems were happening.  Maybe that's because I got so used to using Typescript over the past year?  At the beginning of the project, I also didn't manage to setup the React Native Debugger to work with my remote development environment (I wanted to develop using my physical iOS phone rather than an emulator).  
 
     While those problem could maybe have been solved given a bit more time, it's undeniable there's a level of extra complexity compared to web development.
 
