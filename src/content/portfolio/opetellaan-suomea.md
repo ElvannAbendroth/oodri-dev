@@ -18,8 +18,6 @@ featured: false
 role: 'Owner, Web developer and UI/UX designer'
 ---
 
-
-
 ## About this Project
 
 **Opetellaan Suomea** is a language learning app to help Finnish learners with declinaisons & conjugaisons.
