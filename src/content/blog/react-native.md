@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Devlog: React Native First Impression"
+title: "React Native:First Impressions"
 snippet: ""
 image: {
     src: "https://media.discordapp.net/attachments/1015687534115815504/1199089586006143016/elvann_illustration_of_a_mobile_phone_with_nature_flat_design_v_7cfaf976-809c-4034-b87e-47bbfa0fe02d.png?ex=65c14633&is=65aed133&hm=8e9badbd0efb18bab5d78be9d7fb7474d74b9c4001876b64517e00dbeba53eb4&=&format=webp&quality=lossless&width=1197&height=671",
