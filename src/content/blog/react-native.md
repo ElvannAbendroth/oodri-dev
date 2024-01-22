@@ -18,7 +18,7 @@ React is a tool I've grown to really love working with over the past years. I've
 
 ## Here's what the Project looks like so far:
 
-![Rate Repository App](https://im.ezgif.com/tmp/ezgif-1-1bc17c8304.gif)
+![Rate Repository App](https://media.discordapp.net/attachments/1198228623719669830/1199119314914115604/ezgif-1-1bc17c8304.gif?ex=65c161e3&is=65aeece3&hm=e1c33a8183442513be0df36dd4f9719606c1f7914dcee5d4c05cd327772f14dd&=&width=310&height=670)
 
 It's pretty simple, it queries repositories from an external API and features them in a list.  There's also a secure jwt token authentication function.
 
