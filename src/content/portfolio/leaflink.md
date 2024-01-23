@@ -118,7 +118,7 @@ For now, the analytics page will be left out of the design.
 
 
 
-## Conclusion & Futur Developement Ideas
+## Conclusion & Future Development Ideas
 
 This project reached a state where it has fulfilled its purposes, which was to get familiar with NetJS13, nonetheless, here are a couple features I would like to maybe add in the future:
 
