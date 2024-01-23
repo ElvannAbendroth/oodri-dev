@@ -16,6 +16,7 @@ links: {
 }
 featured: false
 role: 'Web developer'
+timeline: "august 2023-now"
 ---
 ## About
 

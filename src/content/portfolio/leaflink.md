@@ -16,6 +16,7 @@ links: {
 }
 featured: true
 role: 'Full-stack Web developer & UI/UX designer'
+timeline: "July 2023-now"
 ---
 
 

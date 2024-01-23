@@ -16,6 +16,7 @@ links: {
 }
 featured: false
 role: 'Web developer & UI/UX designer'
+timeline: "Sepember 2023-now"
 ---
 
 ## Project Overview

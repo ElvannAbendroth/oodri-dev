@@ -16,6 +16,7 @@ links: {
 }
 featured: true
 role: 'Owner, Web developer and UI/UX designer'
+timeline: "May 2020-now (ongoing)"
 ---
 
 ## Project & Requirements

@@ -12,7 +12,7 @@ const blogCollection = defineCollection({
       alt: z.string(),
     }),
     publishDate: z.string().transform((str) => new Date(str)),
-    author: z.string().default("Astroship"),
+    author: z.string().default("Audrey Downey"),
     category: z.string(),
     tags: z.array(z.string()),
   }),
@@ -33,6 +33,7 @@ const portfolioCollection = defineCollection({
     stack: z.array(z.string()),
     featured: z.boolean(),
     role: z.string(),
+    timeline: z.string(),
     links: z
       .object({
         demo: z.string(),

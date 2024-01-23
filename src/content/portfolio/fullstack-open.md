@@ -18,6 +18,7 @@ links:
   }
 featured: false
 role: 'Student & Web Developer'
+timeline: "march-june 2023"
 ---
 
 ## Summary

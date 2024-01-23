@@ -37,7 +37,7 @@ export const config: SiteConfig = {
   hero: {
     headline: "Hei, I'm Oodri!",
     subtitle:
-      "I'm a full-stack developer with a love for design, problem solving & music",
+      "🚀✨ I'm a full-stack developer & UI/UX designer passionate about creating beautiful and useful websites & applications for small businesses.",
 
     ctas: [
       {
@@ -81,12 +81,12 @@ export const config: SiteConfig = {
     //   ],
     // },
     {
-      title: "Resume",
-      path: "/resume",
+      title: "About",
+      path: "/about",
     },
     {
       title: "Projects",
-      path: "/projects",
+      path: "/projects/?search=Featured",
     },
     {
       title: "Blog",

@@ -15,6 +15,7 @@ links: {
 }
 featured: true
 role: 'UI/UX Designer'
+timeline: "August 2023"
 ---
 
 ![Jekyll Homepage Redesign](../../assets/portfolio/jekyll-homepage.png)

@@ -15,6 +15,7 @@ links: {
 }
 featured: false
 role: 'Owner, Web developer and UI/UX designer'
+timeline: "2019-now"
 ---
 
 ## About this Project

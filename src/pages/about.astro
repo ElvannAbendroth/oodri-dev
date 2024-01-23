@@ -1,73 +1,201 @@
 ---
-import PageLayout from "@layouts/PageLayout.astro";
-import Cta from "@components/cta.astro";
-import heroImage from "assets/headshot-1.jpg";
+import heroImage from "../assets/headshot-1.jpg";
+import Container from "@components/container.astro";
+import ProjectCards from "@components/project-cards.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Link from "@components/ui/link.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon";
+import { getCollection, getEntry } from "astro:content";
+
+// Filter portfolio entries with 'draft: false' & date before current date
+const publishedPortfolioEntries = await getCollection(
+  "portfolio",
+  ({ data }) => {
+    return !data.draft && data.publishDate < new Date();
+  },
+);
+
+function filterByCategory(entries, category) {
+  if (category === "") return entries;
+  if (category === "Featured")
+    return entries.filter((entry) => entry.data.featured);
+  return entries.filter((entry) => {
+    return entry.data.category === category;
+  });
+}
+
+const education = [
+  {
+    title: "Full-stack Open Course",
+    location: "University of Helsinki",
+    years: "2023-now",
+    description:
+      "I'm currently studying modern full-stack development in this course endorsed by Houston, Unity & Terveystalo.  I have obtained the certificat  for parts 1 to 8.",
+  },
+  {
+    title: "Computer Science (Bachelor's Studies)",
+    location: "University of Laval",
+    years: "2016-2017",
+    description:
+      "I took Bachelor's level courses and learned the basics of programming (Python), OOP (C++), relational modelling (UML) and the basics of computing and Assembly (ARM).",
+  },
+  {
+    title: "Bachelor's Degree in Music",
+    location: "University of Montreal",
+    years: "2012-2016",
+    description:
+      "I obtained a Bachelor's Degree in music, specialized in harp & classical singing performance.",
+  },
+];
+
+const technologies = [
+  { label: "HTML & CSS", type: "frontend" },
+  { label: "ReactJS", type: "frontend" },
+  { label: "NextJS", type: "framework" },
+  { label: "Javascript", type: "frontend" },
+  { label: "Typescript", type: "frontend" },
+  { label: "Tailwind", type: "frontend" },
+  { label: "Wordpress", type: "framework" },
+  { label: "Figma", type: "design" },
+  { label: "Github/Git", type: "tool" },
+  { label: "CI/CD", type: "tool" },
+  { label: "NodeJS", type: "tool" },
+  { label: "ExpressJS", type: "backend" },
+  { label: "REST API", type: "backend" },
+  { label: "GraphQL & Apollo", type: "backend" },
+  { label: "CI/CD", type: "backend" },
+  { label: "MongoDB", type: "backend" },
+  { label: "Framer Motion", type: "library" },
+  { label: "NextAuthJS", type: "library" },
+];
+
+const languages = [
+  { label: "English", level: "native/fluent" },
+  { label: "French", level: "native/fluent" },
+  { label: "Finnish", level: "intermediate - B.2" },
+];
+
+const page = await getEntry("page", "about");
+const { Content } = await page.render();
+
+const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
+  a.data.publishDate > b.data.publishDate ? -1 : 1,
+);
 ---
 
-<PageLayout title="About" subtitle="A little more about me">
-  <div class="w-full px-14 sm:px-0 sm:w-[150px] mx-auto">
-    <img
-      transition:name="headshot"
-      src={heroImage.src}
-      alt="Profile picture"
-      class="w-full transition group-hover:-translate-y-1 group-hover:shadow-xl rounded-full aspect-square"
-    />
-  </div>
+<Layout title="Resume">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Resume</Fragment>
+      <Fragment slot="desc">Audrey Downey, Full-stack web developer</Fragment>
+    </Sectionhead>
 
-  <div class="flex flex-col mx-auto max-w-4xl prose prose-p:text-lg">
-    <h2>👋 Hey there, Nice to meet you!</h2>
-    <p>
-      🌿 I'm a <strong>full-stack web developer</strong> based in Helsinki,
-      dedicated to crafting seamless user experiences by bridging the worlds of
-      design and code. My current favorite technologies include NextJS, Tailwind
-      & MongoDB
-    </p>
-    <p>
-      🌟 My interest in coding started as early as childhood, as I sought
-      innovative solutions to solve my day-to-day challenges with the help of my
-      trusty family computer.
-    </p>
-    <p>
-      🎶 Prior to making coding my full-time endeavor, my journey began with a
-      deep passion for music that led me to completing a Bachelor's Degree in
-      music. At the time I applied for college, this decision was quite
-      audacious given I had no prior experience in music, and auditions were
-      looming just three months away. Fueled by relentless determination, I
-      dedicated myself to intense study which earned me not only admission into
-      college, but also a spot in the advanced music theory class.
-    </p>
-    <p>
-      👨‍💻 Fast forward, I embarked on a tech adventure, studying <strong
-        >Computer Science at the University of Laval</strong
-      > in Quebec City, diving into the depths of <strong>
-        OOP, Relational Modeling,</strong
-      > and even testing my skills in <strong> Assembly (ARM)</strong>.
-    </p>
-    <p>
-      💼 Over the years, I've worked as a freelancer musician, though a big part
-      of my daily work has been heavily involved on the tech side. I handled
-      everything: from desinging up my<strong> artist website</strong> and
-      setting up <strong> e-commerce and email integrations</strong>, all the
-      way to coding my own<strong> Discord bot</strong>. My skillset also
-      expanded to include <strong
-        >visual design, brand identity, copywriting
-      </strong> and running successful lead generation campaigns with the
-      <strong>Facebook Ads</strong> platform.
-    </p>
-    <p>
-      🚀 Recently, I decided to pivot back to programming full-time. I completed
-      part 1-7 of the <strong>
-        Full-stack Open Course with the University of Helsinki
-      </strong>, reaffirming my passion for web technologies and earning the
-      course certificate.
-    </p>
-    <p>
-      💡 I'm on the lookout for projects that will push my technical and
-      creative boundaries. I'd love to join a team of passionate developers for
-      which my unique set skills and experience can be an asset, and from which
-      I can learn new skills!
-    </p>
-    <p>Let's chat! 🚀</p>
-  </div>
-  <Cta />
-</PageLayout>
+    <div class="w-full flex justify-center mt-8">
+      <img
+        transition:name="headshot"
+        src={heroImage.src}
+        alt="Astronaut in the air"
+        sizes="(max-width: 300px) 100vw, 300px"
+        loading="eager"
+        class="rounded-full max-w-[250px]"
+      />
+    </div>
+
+    <div
+      class="flex flex-col mx-auto max-w-4xl mt-8 prose prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
+      <h2 class="font-bold text-2xl text-gray-800">About</h2>
+
+      <Content />
+    </div>
+
+    <div
+      id="education-and-skills-section"
+      class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16 print:grid-cols-2 print:break-before-page print:pt-16">
+      <div>
+        <h2 class="font-bold text-2xl text-gray-800">Education</h2>
+
+        <ul>
+          {
+            education.map((item) => {
+              return (
+                <li>
+                  <h3 class="font-medium text-xl text-gray-800 mt-5">
+                    {item.title}
+                  </h3>
+                  <div class="flex items-center mt-2 space-x-2 text-gray-600">
+                    <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+                    <span>
+                      {item.location}, {item.years}
+                    </span>
+                  </div>
+
+                  <p class="flex items-center mt-2 space-x-2 text-slate-500">
+                    {item.description}
+                  </p>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </div>
+      <div>
+        <div>
+          <h2 class="font-bold text-2xl text-gray-800">Skills</h2>
+          <div class="pt-5 flex flex-wrap gap-2">
+            {
+              technologies.map((skill) => {
+                return (
+                  <li class="bg-slate-100 text-gray-800 py-1 px-2 rounded-md list-none">
+                    {skill.label}
+                  </li>
+                );
+              })
+            }
+          </div>
+        </div>
+        <h2 class="font-bold text-2xl text-gray-800 mt-8">Languages</h2>
+        <div class="pt-5 flex flex-wrap gap-2">
+          {
+            languages.map((skill) => {
+              return (
+                <li class="bg-slate-100 text-gray-800 py-1 px-2 rounded-md list-none">
+                  {skill.label}
+                  <span class="text-sm text-gray-500">({skill.level})</span>
+                </li>
+              );
+            })
+          }
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="experience-section"
+      class="flex flex-col mx-auto max-w-4xl mt-16 print:break-before-page print:pt-16">
+      <h2 class="font-bold text-2xl text-gray-800">Experience & Projects</h2>
+
+      <ul class="flex flex-col gap-5 mt-4">
+        {
+          filterByCategory(sortedProjects, "Featured").map((entry) => {
+            return (
+              <ProjectCards entry={entry} />
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+    <div class="flex justify-center pt-12 gap-3 print:hidden">
+      <Link href="/contact" style="outline">Get In Touch</Link>
+      <Link href="/projects/">View More Portfolio Projects</Link>
+    </div>
+    <!-- for print only -->
+    <div class="justify-center pt-12 gap-3 hidden print:flex">
+      <Link href="http://www.oodri.dev/contact" style="outline">
+        Get In Touch
+      </Link>
+      <Link href="http://www.oodri.dev/projects/">View More Projects</Link>
+    </div>
+  </Container>
+</Layout>

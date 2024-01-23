@@ -15,7 +15,7 @@ const entries = Astro.props.entries;
 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-16 max-w-4xl mx-auto">
   {
     entries.map((entry, index) => (
-      <li>
+      <li class="h-full">
         <a href={`/portfolio/${entry.slug}`}>
           <div class="flex flex-col gap-2 ">
             <div class="relative">
@@ -54,12 +54,14 @@ const entries = Astro.props.entries;
             </div>
           </div>
         </a>
-        <div class="mt-4 mb-6">
-          <span transition:name={entry.data.snippet} class="text-gray-400">
+        <div class="mt-4 mb-6 ">
+          <span
+            transition:name={entry.data.snippet}
+            class="text-gray-400 line-clamp-2">
             {entry.data.snippet}
           </span>
         </div>
-        <div class="flex gap-2 mt-3">
+        <div class="flex gap-2 mt-3 ">
           {entry.data.links.github && (
             <Link
               transition:name={`github-${entry.data.links.github}`}

@@ -17,6 +17,7 @@ links: {
 }
 featured: false
 role: 'Full-stack Web developer & UI designer'
+timeline: "2023"
 ---
 
 ## About This Project

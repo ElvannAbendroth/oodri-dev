@@ -24,11 +24,11 @@ Almost half of the companies founded in the capital region of Helsinki are found
 
 Previously, I have been active in different entrepreneurial programs; I have received the [Starttiraha Grant](https://www.yrittajat.fi/tietopankki/liiketoiminta/rahoitus/starttiraha/) offered by Yrittäjät for my early business activities in Finland, and been part of the [Startti Plus](https://www.starttiplus.fi/) during which I was paired with [Asko Mononen](https://www.linkedin.com/in/askold/?originalSubdomain=fi) as my mentor.  Both programs have been incredibly helpful in my journey as an entrepreneur.
 
-But after a few years of operation and the economic recession, finding work in the initial industry I had set for myself (music, audio & entertainement), my growth staggered and as my main operations were with international clients, finding new clients willing to pay a living wage for Finnish standards became increasingly harder.
+But after a few years of operation and the economic recession, it became incredible difficult for me to find new international clients willing to pay a living wage for Finnish standards.
 
 ## Event & Takeaways
 
-Today, I was excited to meet with my mentor, [Hannele Mennala](), senior business executive, business coach & head of MovEd collective.  Meeting with her was such a delight, and I'm excited to start the work together.  After the presentation we had about 15 minutes to introduce ourselves and schedule the first meeting!
+Today, I was excited to meet with my mentor, [Hannele Mennala](), senior business executive, business coach & head of MovED collective.  Meeting with her was such a delight, and I'm excited to start the work together.  After the presentation we had about 15 minutes to introduce ourselves and schedule the first meeting!
 
 I've very excited to get started and expand my horizons with new ideas and approaches.  I'm coming into this project with a lot of commitment, trust, and willingness to challenge myself and go out my comfort zones.
 
