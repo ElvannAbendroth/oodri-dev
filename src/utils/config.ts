@@ -54,7 +54,7 @@ export const config: SiteConfig = {
       },
       {
         //href: "./src/assets/resume/Audrey Downey - Dev Resume September 2023.pdf",
-        href: "https://www.dropbox.com/scl/fi/pnhpr1mc87ldz9bitqweu/Audrey-Downey-Dev-Resume-January-2024-2.pdf?rlkey=56n65l6rra9af9tdr3ppimffy&dl=0",
+        href: "https://www.dropbox.com/scl/fi/r1txjdtddt8bnotxx6goa/Audrey-Downey-Dev-Resume-January-2024-3.pdf?rlkey=6cb1g1o86j82a71g42wpcfc76&dl=0",
         //download: "Audrey Downey - Resume September 2023",
         target: "_blank",
         class: "flex gap-1 items-center justify-center",
