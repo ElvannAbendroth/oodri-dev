@@ -7,7 +7,7 @@ image: {
     alt: "full stack web development"
 }
 publishDate: "2023-05-12 17:39"
-category: "Challenge"
+category: "Devlog"
 author: "Audrey Downey"
 tags: [tailwind, css, frontend]
 ---

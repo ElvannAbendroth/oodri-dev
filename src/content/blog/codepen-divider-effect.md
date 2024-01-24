@@ -7,7 +7,7 @@ image: {
     alt: "full stack web development"
 }
 publishDate: "2023-04-12 17:39"
-category: "Challenge"
+category: "Devlo"
 author: "Audrey Downey"
 tags: [codepen, css, frontend]
 ---
