@@ -37,7 +37,7 @@ export const config: SiteConfig = {
   hero: {
     headline: "Hei, I'm Oodri!",
     subtitle:
-      "🚀✨ I'm a full-stack developer & UI/UX designer passionate about creating beautiful and useful websites & applications for small businesses.",
+      "🚀✨ I'm a full-stack developer based in Helsinki who loves building beautiful web tools that inspire creativity.",
 
     ctas: [
       {

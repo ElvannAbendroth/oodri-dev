@@ -2,6 +2,6 @@
 title: "About"
 ---
 
-I'm a full-stack developer and UI/UX designer based in Helsinki, Finland.  I am passionate about helping **small businesses** and **start-ups** find their voice and make an impact by building and designing **beautiful website & web applications**.  I want to contribute to making the world a place where sharing knowledge and creative ideas is more accessible.
+I'm a full-stack developer with a UI/UX design background based in Helsinki, Finland.  I am passionate about helping **small businesses** and **start-ups** find their voice and make an impact by building and designing **beautiful website & web applications**.  I want to contribute to making the world a place where sharing knowledge and creative ideas is more accessible.
 
 When I'm not developing, I enjoy working on my many other creative projects.  You might find me playing the harp, recording vocals for metal bands from all over the world or producing music for my solo music project.
