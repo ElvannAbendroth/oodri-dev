@@ -22,6 +22,19 @@ I came across "The Pyramid Principle" after my mentor, [Hannele](https://www.lin
 In essence, the Pyramid Principle, developed by Barbara Minto, stands as a communication powerhouse in the consulting world. It advocates for leading with the conclusion or recommendation before delving into supporting details, offering a framework to structure ideas effectively, especially in high-stakes scenarios. You can read more about it in-depth [here](https://www.myconsultingoffer.org/case-study-interview-prep/pyramid-principle/).
 
 
+Here are some examples of what this could look like in practice (examples taken from the [original article](https://www.myconsultingoffer.org/case-study-interview-prep/pyramid-principle/))
+
+Let assume a basic question:
+
+> Honey-bear, what time will you be home for dinner?
+
+Here's how most people tend to answer:
+
+> Well poopsie, I have to drop off my dry cleaning, return a video to Blockbuster, and pick up Fozzie from the groomer, so I should be home at 6 p.m.
+
+Here's the same reply, but putting the answer first (as encouraged by the Pyramid Principle)
+> I should be home at 6 p.m. because I have to drop off my dry cleaning, return the video to blockbuster, and pick up Fozzie from the groomer.
+
 ## Bringing it Home: Pyramid Principle in the Context of Solo Entrepreneurship
 
 As a solo entrepreneur offering freelance services and 1-on-1 coaching, my day-to-day doesn't really involve presenting ideas to big business executives. However, I'm keenly aware of the value this communication approach holds, especially in sales (which is something I've done for quite a while).
