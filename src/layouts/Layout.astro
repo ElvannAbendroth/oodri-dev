@@ -8,6 +8,7 @@ import "@utils/style.css";
 
 export interface Props {
   title: string;
+  openGraphImage?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
@@ -17,7 +18,7 @@ const resolvedImageWithDomain = new URL(
   Astro.site,
 ).toString();
 
-const { title } = Astro.props;
+const { title, openGraphImage = resolvedImageWithDomain } = Astro.props;
 
 const makeTitle = title ? title + " | " + "Oodri" : "Oodri - Web developer";
 ---
@@ -45,7 +46,7 @@ const makeTitle = title ? title + " | " + "Oodri" : "Oodri - Web developer";
           url: canonicalURL,
           type: "website",
           title: `Oodri - Web developer`,
-          image: resolvedImageWithDomain,
+          image: openGraphImage,
         },
         image: {
           alt: "Oodri Homepage Screenshot",
