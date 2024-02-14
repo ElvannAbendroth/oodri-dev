@@ -9,7 +9,7 @@ image: {
 publishDate: "2024-01-22 09:00"
 category: "Devlog"
 author: "Audrey Downey"
-tags: [devlog, fullstackopen, react-native]
+tags: [devlog, react-native]
 ---
 
 As I casually browsed through YouTube's vast landscape of coding tutorials and tech discussions, React Native made a recurring appearance. Devs from various corners of the internet spoke about it, each sharing a sentiment that hovered somewhere between intrigue and reservation. What struck me as unusual was the absence of extreme opinions – no overwhelming cheers, nor resounding jeers. It was an enigma, acknowledged by many, yet truly understood by only a few.
