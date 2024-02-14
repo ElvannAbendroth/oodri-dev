@@ -13,16 +13,19 @@ const publishedBlogEntries = await getCollection("blog", ({ data }) => {
 publishedBlogEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
+
+const description =
+  "Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!";
 ---
 
-<Layout title="Blog">
+<Layout
+  title="Blog"
+  openGraphImage={publishedBlogEntries[0].data.image.src}
+  description={description}>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Blog</Fragment>
-      <Fragment slot="desc">
-        I write about my coding journey as an ever-learning fullstack developer
-        & entrepreneur!
-      </Fragment>
+      <Fragment slot="desc"></Fragment>
     </Sectionhead>
     <main class="mt-16">
       <ul class="grid gap-16 max-w-4xl mx-auto">

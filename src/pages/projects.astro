@@ -32,6 +32,9 @@ publishedPortfolioEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 
+const description =
+  "Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!";
+
 const astro = Astro.url;
 
 const categories = [
@@ -44,12 +47,15 @@ const categories = [
 ];
 ---
 
-<Layout title="Portfolio">
+<Layout
+  title="Portfolio"
+  openGraphImage={publishedPortfolioEntries[0].data.image.src}
+  description={description}>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Projects</Fragment>
       <Fragment slot="desc">
-        Here's a list of recent projects I have worked on
+        {description}
       </Fragment>
     </Sectionhead>
     <main class="mt-16 flex flex-col gap-6">
