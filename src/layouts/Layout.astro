@@ -9,6 +9,7 @@ import "@utils/style.css";
 export interface Props {
   title: string;
   openGraphImage?: string;
+  description?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
@@ -18,9 +19,17 @@ const resolvedImageWithDomain = new URL(
   Astro.site,
 ).toString();
 
-const { title, openGraphImage = resolvedImageWithDomain } = Astro.props;
+const {
+  title,
+  description,
+  openGraphImage = resolvedImageWithDomain,
+} = Astro.props;
 
-const makeTitle = title ? title + " | " + "Oodri" : "Oodri - Web developer";
+const makeTitle = title
+  ? title + " | " + "Oodri"
+  : "Oodri - Web developer & UI/UX Designer";
+const defaultDescription =
+  "👋 Hey there!  I'm Oodri, a web developer based in Helsinki!";
 ---
 
 <!doctype html>
@@ -34,22 +43,21 @@ const makeTitle = title ? title + " | " + "Oodri" : "Oodri - Web developer";
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="👋 Hey there!  I'm Oodri, a web developer based in Helsinki!"
+      description={description || defaultDescription}
       canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Oodri - Web developer`,
+          title: `${title}`,
           image: openGraphImage,
         },
+        optional: {
+          description: description,
+          siteName: "Oodri's Portfolio",
+        },
         image: {
-          alt: "Oodri Homepage Screenshot",
+          alt: title,
         },
       }}
     />
@@ -79,12 +87,15 @@ const makeTitle = title ? title + " | " + "Oodri" : "Oodri - Web developer";
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYRTH2EKDV"
     ></script>
     <script>
+      // @ts-ignore
       window.dataLayer = window.dataLayer || [];
       function gtag() {
+        // @ts-ignore
         dataLayer.push(arguments);
       }
+      // @ts-ignore
       gtag("js", new Date());
-
+      // @ts-ignore
       gtag("config", "G-JYRTH2EKDV");
     </script>
   </body>

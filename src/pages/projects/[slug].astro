@@ -22,7 +22,10 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title} openGraphImage={entry.data.image.src}>
+<Layout
+  title={entry.data.title}
+  openGraphImage={entry.data.image.src}
+  description={entry.data.snippet}>
   <Container>
     <div class="mx-auto max-w-3xl mt-14">
       <a
