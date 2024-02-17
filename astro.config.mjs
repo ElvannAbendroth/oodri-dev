@@ -10,7 +10,10 @@ export default defineConfig({
   site: "https://oodri.dev",
   integrations: [tailwind(), mdx(), sitemap(), react()],
   //output & adapter make site SSR and allows searchParams
-
   output: "server",
   adapter: vercel(),
+  redirects: {
+    "/portfolio": "/projects",
+    "/portfolio/[slug]": "/projects/[slug]",
+  },
 });
