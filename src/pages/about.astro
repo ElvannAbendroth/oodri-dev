@@ -1,6 +1,5 @@
 ---
-import Grids from "@components/Grids";
-import heroImage from "../assets/photos/oodri-laptop.jpg";
+import aboutImage from "../assets/photos/oodri-laptop.jpg";
 import Container from "@components/container.astro";
 import ProjectCards from "@components/project-cards.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -101,7 +100,7 @@ const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
        <div class="w-full flex justify-center">
          <img
           transition:name="headshot"
-          src={heroImage.src}
+          src={aboutImage.src}
           alt="Astronaut in the air"
           sizes="(max-width: 300px) 100vw, 300px"
           loading="eager"
