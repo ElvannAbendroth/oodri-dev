@@ -3,7 +3,7 @@ draft: false
 title: "In a Noteshell - Music Theory Docs"
 snippet: "🚀🎵A documentation website for learning advanced music theory made with Astro & the Starlight Template."
 image: {
-    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197818581140918342/Dev_Portfolio_Images.jpg?ex=65bca67c&is=65aa317c&hm=3cc248b1279aec05892271956db4486f8a8214f5ef30c6b91296998bf0059472&",
+    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1210937788556648458/Dev_Portfolio_Images.png?ex=65ec60b2&is=65d9ebb2&hm=caeb009ebf0ebab9c5b9477133ca017c507b3eaec9be894057f2947bb58f9373&",
     alt: "Elvann's Portfolio"
 }
 publishDate: "2023-10-10 15:00"

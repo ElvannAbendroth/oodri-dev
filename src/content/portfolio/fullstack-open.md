@@ -4,7 +4,7 @@ title: "Full-stack Open Blog"
 snippet: "A full-stack web application built with React, Express & MongoDB"
 image:
   {
-    src: "https://media.discordapp.net/attachments/1007918780594257953/1197997240866832505/fullstack-open.jpg?ex=65bd4cdf&is=65aad7df&hm=2d033b72435a9c3d471ae7ebe39596bf7440c6bc75fc265f140b1d1f0b232a7e&=&format=webp&width=1194&height=671",
+    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197997240866832505/fullstack-open.jpg?ex=65eb715f&is=65d8fc5f&hm=c9a97791cf1b28b9d3ad35ae1d6210049ce8dc9caf2862dff0d4367f42ca2f49&",
     alt: "Full-stack open Blog",
   }
 publishDate: "2023-05-08 11:39"

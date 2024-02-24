@@ -3,7 +3,7 @@ draft: false
 title: "Landing Page Redesign for Jekyll Blog"
 snippet: "A Landing Page redesign project for Jekyll's blogging platform."
 image: {
-    src: "https://media.discordapp.net/attachments/1007918780594257953/1197996922535944232/jekyll.png?ex=65bd4c94&is=65aad794&hm=b344f5feb92776ad24cd6f18d36c6b1959e14b4e0ad4f8819a75fc6756f6bf59&=&format=webp&quality=lossless&width=1051&height=671",
+    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197996922535944232/jekyll.png?ex=65eb7114&is=65d8fc14&hm=ea8fb637bc968daf26b178051d2b2e39682b92085278f19b255c5ad9e48e0a65&",
     alt: "Jekyll Blog"
 }
 publishDate: "2023-08-03 15:39"

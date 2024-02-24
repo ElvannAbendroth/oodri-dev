@@ -3,7 +3,7 @@ draft: false
 title: "this.portfolio"
 snippet: "A static markdown portfolio website with blog, built with Astro 3.0 & the Astroship Theme"
 image: {
-    src: "https://media.discordapp.net/attachments/1007918780594257953/1197996923064438964/oodri-dev.jpg?ex=65bd4c94&is=65aad794&hm=a9e853a1029ed3a18ca2de7e18d35336baedda426ffc17caf86ac21dd1ce4be9&=&format=webp&width=1194&height=671",
+    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197996923064438964/oodri-dev.jpg?ex=65eb7114&is=65d8fc14&hm=f46c42194c6403e5e48c6ec7b5fc3c7681479127ade9a88477e8554d11974854&",
     alt: "Oodri Dev Portfolio"
 }
 publishDate: "2023-09-08 11:39"
