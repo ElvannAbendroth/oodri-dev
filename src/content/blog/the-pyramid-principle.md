@@ -3,7 +3,7 @@ draft: false
 title: "The Pyramid Principle: A Tool to Help Run Smooth and Effective Discovery Calls"
 snippet: "Exploring the Pyramid Principle and its Application in Solo Entrepreneurship"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1197638549126791379/elvann_leaves_and_big_helping_mother_hands_Finland_blue_and_gre_f2577479-b7e3-4c9f-a900-c5e608be95e8.png?ex=65bbfed1&is=65a989d1&hm=b1a4bd5598538b4e427108a6dcfdc2535c0995ec34d78b20c55745249004ae23&",
+    src: "https://cdn.midjourney.com/2984c327-9f5f-4d99-83bf-6869964617d3/0_0.webp",
     alt: "She's Got This Mentorship Program Kick-off Event"
 }
 publishDate: "2024-02-13 20:30"

@@ -51,4 +51,4 @@ React Native is still new to me, and I'll need to put a lot more time working wi
 
 React Native seems to me like a great tool, and I think the fact that it's built on top of React makes it much easier to learn for anyone who knows React. Nonetheless, I definitely personally don't find it as enjoyable as developing for the web. My next personal project is probably not going to be a React Native App, but I'd be okay working with it again in the future.
 
-![Three phones with nature](https://media.discordapp.net/attachments/1015687534115815504/1199089685612478586/elvann_llustration_of_a_mobile_phone_app_with_nature_flat_desig_58d0bfd8-b770-4095-82ec-38edec7081bf.png?ex=65c1464b&is=65aed14b&hm=f0ce6285328043d1b7907c4d1a3a42ee8528bdef3600234c5baa2682def3a0c7&=&format=webp&quality=lossless&width=1197&height=671)
+![Three phones with nature](https://cdn.midjourney.com/c052f0a8-ce79-4bb7-9d59-d273fd8f1bd6/0_1.webp)
