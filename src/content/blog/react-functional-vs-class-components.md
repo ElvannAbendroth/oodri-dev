@@ -3,7 +3,7 @@ draft: false
 title: "React Functional vs. Class Components: What's the Difference?"
 snippet: ""
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1199664195290005605/elvann_abstract_illustration_with_circles_and_curves_and_small__e99f0d32-f71c-410f-97f0-e538ed3a5cb4.png?ex=65c35d58&is=65b0e858&hm=44720bf4926132633452eecb1a935347b39e3eeac6dca8ba16ac5162df4a1786&",
+    src: "https://cdn.midjourney.com/74582746-d061-4c11-b341-1b677b3c71b3/0_2.webp",
     alt: "full stack web development"
 }
 publishDate: "2023-07-17 09:00"

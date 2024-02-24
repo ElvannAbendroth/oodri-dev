@@ -3,7 +3,7 @@ draft: false
 title: "Helping Ukraine as Web Developer for MovEd"
 snippet: "At the turn of 2024, I'm happy to be joining MovEd to help them with their website needs!"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1197653217710977134/elvann_beautiful_home_with_flowers_illustration_deep_blue_color_979db90b-310c-4fc0-a396-32b03ee0dd80.png?ex=65bc0c7a&is=65a9977a&hm=870f4a100a0906f0e7101ce394c8eec91cab4e86a17d4d5ecbec2b2913313f60&",
+    src: "https://cdn.midjourney.com/dcae9029-7b66-4046-b750-369897b979c6/0_2.webp",
     alt: "full stack web development"
 }
 publishDate: "2024-01-07 18:00"

@@ -3,7 +3,7 @@ draft: false
 title: "Creating a Rounded Section Divider with Pure CSS"
 snippet: "I challenged myself to create rounded section dividers that could support adjacent background images in pure css."
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1197816530600214609/elvann_abstract_illustration_with_circles_and_curves_and_small__9a9ddea0-4590-4a17-81f2-8a53d57f9dd7.png?ex=65bca493&is=65aa2f93&hm=5e50879b7fc74686a524f5cd818c98dfed3e7db04c3dff98f7ffed35f6889c6a&",
+    src: "https://cdn.midjourney.com/37fce312-fadd-4d58-ba39-3cd96f7887d7/0_2.webp",
     alt: "full stack web development"
 }
 publishDate: "2023-04-12 17:39"
