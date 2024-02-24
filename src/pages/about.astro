@@ -1,5 +1,6 @@
 ---
-import heroImage from "../assets/headshot-1.jpg";
+import Grids from "@components/Grids";
+import heroImage from "../assets/photos/oodri-laptop.jpg";
 import Container from "@components/container.astro";
 import ProjectCards from "@components/project-cards.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -86,26 +87,28 @@ const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
 <Layout title="Resume">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Resume</Fragment>
-      <Fragment slot="desc">Audrey Downey, Full-stack web developer</Fragment>
+      <Fragment slot="title">About</Fragment>
+      <Fragment slot="desc">Audrey Downey, Full-stack Javascript Developer & UI/UX Designer</Fragment>
     </Sectionhead>
 
-    <div class="w-full flex justify-center mt-8">
-      <img
-        transition:name="headshot"
-        src={heroImage.src}
-        alt="Astronaut in the air"
-        sizes="(max-width: 300px) 100vw, 300px"
-        loading="eager"
-        class="rounded-full max-w-[250px]"
-      />
-    </div>
+   
 
     <div
-      class="flex flex-col mx-auto max-w-4xl mt-8 prose prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
-      <h2 class="font-bold text-2xl text-gray-800">About</h2>
-
-      <Content />
+      class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-4xl mt-8  px-6">
+      <div class="col-span-2 prose prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
+             <Content />
+      </div>
+       <div class="w-full flex justify-center">
+         <img
+          transition:name="headshot"
+          src={heroImage.src}
+          alt="Astronaut in the air"
+          sizes="(max-width: 300px) 100vw, 300px"
+          loading="eager"
+          class="rounded-full object-cover shadow-md"
+               />
+       </div>
+      </div>
     </div>
 
     <div
