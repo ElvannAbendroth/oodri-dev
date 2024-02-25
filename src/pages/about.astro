@@ -1,5 +1,5 @@
 ---
-import aboutImage from '../assets/photos/oodri-laptop.jpg'
+import aboutImage from '../assets/oodri-laptop.jpg'
 import Container from "@components/container.astro";
 import ProjectCards from "@components/project-cards.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -7,6 +7,9 @@ import Link from "@components/ui/link.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import { getCollection, getEntry } from "astro:content";
+
+console.log(aboutImage)
+
 
 // Filter portfolio entries with 'draft: false' & date before current date
 const publishedPortfolioEntries = await getCollection(
