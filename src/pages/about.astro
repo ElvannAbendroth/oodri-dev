@@ -8,9 +8,6 @@ import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
 import { getCollection, getEntry } from "astro:content";
 
-console.log(aboutImage)
-
-
 // Filter portfolio entries with 'draft: false' & date before current date
 const publishedPortfolioEntries = await getCollection(
   "portfolio",
@@ -99,16 +96,17 @@ const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
       class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 max-w-4xl mt-8  px-6">
       <div class="col-span-2 prose prose-p:leading-relaxed prose-p:text-slate-500 prose-p:mt-3 prose-p:mb-0">
              <Content />
-      </div>
+       </div>
        <div class="w-full flex justify-center">
-         <img
-          transition:name="headshot"
-          src={aboutImage.src}
-          alt="Astronaut in the air"
-          sizes="(max-width: 300px) 100vw, 300px"
-          loading="eager"
-          class="rounded-full object-cover shadow-md"
-               />
+          <img
+            src={aboutImage.src}
+            alt="Astronaut in the air"
+            sizes="(max-width: 300px) 100vw, 300px"
+            loading="eager"
+            width={200}
+            height={300}
+            class="rounded-full object-cover shadow-md"
+                />
        </div>
       </div>
     </div>
