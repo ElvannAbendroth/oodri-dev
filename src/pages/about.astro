@@ -6,6 +6,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import Link from "@components/ui/link.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import { Image } from 'astro:assets';
 import { getCollection, getEntry } from "astro:content";
 
 // Filter portfolio entries with 'draft: false' & date before current date
@@ -98,8 +99,8 @@ const sortedProjects = publishedPortfolioEntries.sort((a, b) =>
              <Content />
        </div>
        <div class="w-full flex justify-center">
-          <img
-            src={aboutImage.src}
+          <Image
+            src={aboutImage}
             alt="Astronaut in the air"
             sizes="(max-width: 300px) 100vw, 300px"
             loading="eager"

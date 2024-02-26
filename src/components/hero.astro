@@ -3,6 +3,7 @@ import heroImage from "../assets/headshot-1.jpg";
 import Link, { type LinkStyle } from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import config from "@utils/config";
+import { Image } from "astro:assets";
 
 const headline = config.hero.headline;
 const subtitle = config.hero.subtitle;
@@ -13,11 +14,10 @@ const ctas = config.hero.ctas;
 <main
   class="grid md:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-2">
-    <img
-      transition:name="headshot"
-      src={heroImage.src}
-      alt="Astronaut in the air"
-      sizes="(max-width: 150px) 100vw, 150px"
+    <Image
+      src={heroImage}
+      alt="Audrey Downey - Javascript full-stack developer"
+      sizes="(max-width: 300px) 100vw, 300px"
       loading="eager"
       class="rounded-full max-w-[300px]"
     />
