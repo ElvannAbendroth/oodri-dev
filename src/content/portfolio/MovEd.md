@@ -3,7 +3,7 @@ draft: false
 title: "MovED Marketing Website Development"
 snippet: "Web developer for MovED, a Finnish non-profit organization that helps Ukrainians."
 image: {
-    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197996922800189635/moved-cover.jpg?ex=65eb7114&is=65d8fc14&hm=587fd873b4a16047c0a257b08893ef9e422fac6a3b43cbf05198b16f912fa689&",
+    src: "assets/portfolio/moved-cover.jpg",
     alt: "Elvann's Portfolio"
 }
 publishDate: "2023-12-23 15:00"

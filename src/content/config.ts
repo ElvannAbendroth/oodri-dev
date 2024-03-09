@@ -19,29 +19,30 @@ const blogCollection = defineCollection({
 });
 
 const portfolioCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string(),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean(),
+      title: z.string(),
+      snippet: z.string(),
+      image: z.object({
+        src: image(),
+        alt: z.string(),
+      }),
+      publishDate: z.string().transform((str) => new Date(str)),
+      category: z.string(),
+      tags: z.array(z.string()),
+      stack: z.array(z.string()),
+      featured: z.boolean(),
+      role: z.string(),
+      timeline: z.string(),
+      links: z
+        .object({
+          demo: z.string(),
+          github: z.string(),
+          behance: z.string(),
+        })
+        .deepPartial(),
     }),
-    publishDate: z.string().transform((str) => new Date(str)),
-    category: z.string(),
-    tags: z.array(z.string()),
-    stack: z.array(z.string()),
-    featured: z.boolean(),
-    role: z.string(),
-    timeline: z.string(),
-    links: z
-      .object({
-        demo: z.string(),
-        github: z.string(),
-        behance: z.string(),
-      })
-      .deepPartial(),
-  }),
 });
 
 const pageCollection = defineCollection({

@@ -3,7 +3,7 @@ draft: false
 title: "Elvann"
 snippet: "A portfolio website built with Wordpress & Designed with Elementor."
 image: {
-    src: "https://cdn.discordapp.com/attachments/1007918780594257953/1197996922171052124/elvann-website.png?ex=65eb7113&is=65d8fc13&hm=4ffb494c68c47fabdd9ba27d4a9428aeff040546537cd6857e091a804b77b798&",
+    src: "assets/portfolio/elvann-website-cover.png",
     alt: "Elvann's Portfolio"
 }
 publishDate: "2023-01-07 15:39"
