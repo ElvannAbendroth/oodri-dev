@@ -3,7 +3,7 @@ draft: false
 title: "React Native: First Impressions"
 snippet: ""
 image: {
-    src: "https://cdn.midjourney.com/49dae748-d77f-4159-af65-3d3411d955fe/0_3.webp",
+    src: "assets/blog/react-native-first-impressions.png",
     alt: "React Native: First Impressions"
 }
 publishDate: "2024-01-22 09:00"

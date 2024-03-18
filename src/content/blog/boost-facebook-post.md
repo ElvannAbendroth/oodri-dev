@@ -3,7 +3,7 @@ draft: false
 title: "How to “Boost” posts on Meta/Facebook"
 snippet: "A guide to better understand the boost feature"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1212691815828955146/elvann_abstract_illustration_of_social_media_feed_abstract_post_5a7e7b3d-c016-425d-9cb8-9241f2e9017e.png?ex=65f2c243&is=65e04d43&hm=22a338be4e84978d6d53eb82440bc387c1694b27dcad8f20877e135ff6588acd&",
+    src: "assets/blog/boost-facebook-post.png",
     alt: "full stack web development"
 }
 publishDate: "2022-05-13 6:11"

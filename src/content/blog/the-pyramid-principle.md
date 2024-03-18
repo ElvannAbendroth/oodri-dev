@@ -3,8 +3,8 @@ draft: false
 title: "The Pyramid Principle: A Tool to Help Run Smooth and Effective Discovery Calls"
 snippet: "Exploring the Pyramid Principle and its Application in Solo Entrepreneurship"
 image: {
-    src: "https://cdn.midjourney.com/2984c327-9f5f-4d99-83bf-6869964617d3/0_0.webp",
-    alt: "She's Got This Mentorship Program Kick-off Event"
+    src: "assets/blog/the-pyramid-principle.png",
+    alt: "The Pyramid Principle"
 }
 publishDate: "2024-02-13 20:30"
 category: "News"

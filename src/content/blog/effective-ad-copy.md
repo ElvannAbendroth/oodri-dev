@@ -3,7 +3,7 @@ draft: false
 title: "How to Write Effective Ad Copy (Guidelines)"
 snippet: "Quick Guidelines on how to write ad copy"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1212680707542089748/elvann_abstract_illustration_of_social_media_feed_abstract_post_fc46c3f5-752e-456c-ae60-7ab74502e063.png?ex=65f2b7eb&is=65e042eb&hm=f8a3be71b70aa000f2bffa015f5a4ec67d77dbe20e5edf03bfd46ff94dd039e2&",
+    src: "assets/blog/effective-ad-copy.png",
     alt: "full stack web development"
 }
 publishDate: "2022-05-28 11:38"

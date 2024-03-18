@@ -3,19 +3,21 @@ import { z, defineCollection } from "astro:content";
 
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
-  schema: z.object({
-    draft: z.boolean(),
-    title: z.string(),
-    snippet: z.string().max(200),
-    image: z.object({
-      src: z.string(),
-      alt: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      draft: z.boolean(),
+      title: z.string(),
+      snippet: z.string().max(200),
+      image: z.object({
+        src: image(),
+        //src: z.string(),
+        alt: z.string(),
+      }),
+      publishDate: z.string().transform((str) => new Date(str)),
+      author: z.string().default("Audrey Downey"),
+      category: z.string(),
+      tags: z.array(z.string()),
     }),
-    publishDate: z.string().transform((str) => new Date(str)),
-    author: z.string().default("Audrey Downey"),
-    category: z.string(),
-    tags: z.array(z.string()),
-  }),
 });
 
 const portfolioCollection = defineCollection({

@@ -3,7 +3,7 @@ draft: false
 title: "How to Create a Cold Audience on Meta/Facebook"
 snippet: "Quick Guidelines on how to write ad copy"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1212687436463865897/elvann_abstract_illustration_of_social_media_feed_abstract_post_18e088fd-38ad-45f7-b484-88290378139e.png?ex=65f2be2f&is=65e0492f&hm=f4be6dcde64268ac507e2d7816bf623228151e4aafc1a15b819d4e624ec41c3f&",
+    src: "assets/blog/cold-audience-creation.png",
     alt: "full stack web development"
 }
 publishDate: "2022-05-28 10:41"

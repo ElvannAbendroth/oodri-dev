@@ -3,7 +3,7 @@ draft: false
 title: "IKIGAI: How to Find Work That You Love"
 snippet: ""
 image: {
-    src: "https://cdn.midjourney.com/8d4d4371-a95e-413c-8518-c0c8fdedf426/0_3.webp",
+    src: "assets/blog/how-to-find-work-that-you-love.png",
     alt: "full stack web development"
 }
 publishDate: "2024-01-19 09:00"

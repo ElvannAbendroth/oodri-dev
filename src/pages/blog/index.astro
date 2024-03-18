@@ -1,27 +1,24 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
+import { getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import Container from '@components/container.astro'
+import Sectionhead from '@components/sectionhead.astro'
 
 // Filter blog entries with 'draft: false' & date before current date
-const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
+const publishedBlogEntries = await getCollection('blog', ({ data }) => {
+  return !data.draft && data.publishDate < new Date()
+})
 
 // Sort content entries by publication date
 publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+})
 
 const description =
-  "Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!";
+  'Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!'
 ---
 
-<Layout
-  title="Blog"
-  openGraphImage={publishedBlogEntries[0].data.image.src}
-  description={description}>
+<Layout title="Blog" openGraphImage={publishedBlogEntries[0].data.image.src.src} description={description}>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Blog</Fragment>
@@ -35,11 +32,11 @@ const description =
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <img
-                    src={blogPostEntry.data.image.src}
+                    src={blogPostEntry.data.image.src.src}
                     alt={blogPostEntry.data.image.alt}
                     sizes="(max-width: 400px) 100vw, 400px"
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
+                    loading={index <= 2 ? 'eager' : 'lazy'}
+                    decoding={index <= 2 ? 'sync' : 'async'}
                     class="w-full rounded-md"
                   />
                   <div>
@@ -47,20 +44,14 @@ const description =
                       {blogPostEntry.data.category}
                     </span>
 
-                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
-                      {blogPostEntry.data.title}
-                    </h2>
+                    <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">{blogPostEntry.data.title}</h2>
 
                     <div class="flex gap-2 mt-3">
-                      <time
-                        class="text-gray-400"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
+                      <time class="text-gray-400" datetime={blogPostEntry.data.publishDate.toISOString()}>
                         {blogPostEntry.data.publishDate.toDateString()}
                       </time>
                       <span class="text-gray-400">• </span>
-                      <span class="text-gray-400">
-                        {blogPostEntry.data.tags.join(", ")}
-                      </span>
+                      <span class="text-gray-400">{blogPostEntry.data.tags.join(', ')}</span>
                     </div>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ draft: false
 title: "Joining 'She's Got This' - Mentorship Program for Immigrant Female Entrepreneurs"
 snippet: ""
 image: {
-    src: "https://cdn.midjourney.com/2984c327-9f5f-4d99-83bf-6869964617d3/0_0.webp",
+    src: "assets/blog/shes-got-this-kick-off.png",
     alt: "She's Got This Mentorship Program Kick-off Event"
 }
 publishDate: "2023-12-04 21:30"
@@ -34,4 +34,4 @@ I'm very excited to get started and expand my horizons with new ideas and approa
 
 While at times I recognize it can be difficult to change my mind and trust outside perspectives, I'm coming into this program ready to challenge some of my beliefs and try things in a different way; Change doesn't happen in comfort.
 
-![Ukrainian Home](https://cdn.discordapp.com/attachments/1015687534115815504/1197651660437196940/elvann_beautiful_home_with_flowers_illustration_flat_design_vib_b0ac5b4f-b63b-43b3-be9c-bbedd2ce3df9.png?ex=65bc0b07&is=65a99607&hm=21b3e08ccac2f18e3b04cd4c55b1e219dcb7d13e0a3b4dbf7032e37c2268b7b2&)
+![Ukrainian Home](assets/blog/shes-got-this-kick-off-01.png)

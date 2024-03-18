@@ -3,7 +3,7 @@ draft: false
 title: "How to Create Dynamic Color Themes With Tailwind"
 snippet: "A project I was working on required the ability for the user to pick between a list of different themes.  Here's morea bout the various solutions I found"
 image: {
-    src: "https://cdn.midjourney.com/34481ed9-5c1f-452d-9edd-c5bfce8c415b/0_0.webp",
+    src: "assets/blog/tailwind-dynamic-color-theme-solutions.png",
     alt: "full stack web development"
 }
 publishDate: "2023-05-12 17:39"

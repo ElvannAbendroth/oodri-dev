@@ -3,7 +3,7 @@ draft: false
 title: "Javascript in 60 seconds (and jQuery)"
 snippet: "A quick introduction to Javascript"
 image: {
-    src: "https://cdn.discordapp.com/attachments/1015687534115815504/1212689332750655508/elvann_abstract_illustration_of_social_media_feed_abstract_java_4a65bbce-c6bd-4e27-b1ea-7fda1f8df34c.png?ex=65f2bff3&is=65e04af3&hm=b0b3ad5877ab81e82af878532abae69c872d24a88d108ad7d2ad168ec2fe2adc&",
+    src: "assets/blog/javascript-in-60-sec.png",
     alt: "full stack web development"
 }
 publishDate: "2022-05-13 12:15"
