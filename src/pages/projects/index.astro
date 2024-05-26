@@ -1,56 +1,42 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
-import PortfolioEntries from "@components/portfolio-entries.astro";
-import Link from "@components/ui/link.astro";
+import { getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import Container from '@components/container.astro'
+import Sectionhead from '@components/sectionhead.astro'
+import PortfolioEntries from '@components/portfolio-entries.astro'
+import Link from '@components/ui/link.astro'
 
 //export const prerender = true; //in SSR mode allows searchParams
 
-let search = Astro.url.searchParams.get("search")! || "";
+let search = Astro.url.searchParams.get('search')! || ''
 
 // Filter portfolio entries with 'draft: false' & date before current date
-const publishedPortfolioEntries = await getCollection(
-  "portfolio",
-  ({ data }) => {
-    return !data.draft && data.publishDate < new Date();
-  },
-);
+const publishedPortfolioEntries = await getCollection('portfolio', ({ data }) => {
+  return !data.draft && data.publishDate < new Date()
+})
 
 function filterByCategory(entries, category) {
-  if (category === "") return entries;
-  if (category === "Featured")
-    return entries.filter((entry) => entry.data.featured);
-  return entries.filter((entry) => {
-    return entry.data.category === category;
-  });
+  if (category === '') return entries
+  if (category === 'Featured') return entries.filter(entry => entry.data.featured)
+  return entries.filter(entry => {
+    return entry.data.category === category
+  })
 }
 
 // Sort content entries by publication date
 publishedPortfolioEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
-});
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+})
 
 const description =
-  "Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!";
+  'Welcome to my blog, where I write about my coding journey as an ever-learning full-stack developer & entrepreneur!'
 
-const astro = Astro.url;
+const astro = Astro.url
 
-const categories = [
-  "",
-  "Featured",
-  "Full-stack App",
-  "UI/UX Design",
-  "E-Commerce Store",
-  "Static Site",
-];
+const categories = ['', 'Featured', 'Full-stack App', 'UI/UX Design', 'E-Commerce Store', 'Static Site']
 ---
 
-<Layout
-  title="Portfolio"
-  openGraphImage={publishedPortfolioEntries[0].data.image.src}
-  description={description}>
+<Layout title="Portfolio" openGraphImage={publishedPortfolioEntries[0].data.image.src.src} description={description}>
   <Container>
     <Sectionhead>
       <Fragment slot="title">Projects</Fragment>
@@ -62,8 +48,8 @@ const categories = [
       <div class="flex flex-col gap-4">
         <div class="flex gap-2 justify-center flex-wrap">
           {
-            categories.map((category) => {
-              if (category === "Featured") {
+            categories.map(category => {
+              if (category === 'Featured') {
                 return (
                   <Link
                     href={`/projects/?search=${category}`}
@@ -72,28 +58,22 @@ const categories = [
                     isActive={search === category && true}>
                     {category}
                   </Link>
-                );
+                )
               }
               return (
                 <Link
-                  href={
-                    category === ""
-                      ? "/projects"
-                      : `/projects/?search=${category}`
-                  }
+                  href={category === '' ? '/projects' : `/projects/?search=${category}`}
                   size="sm"
                   style="subtle"
                   isActive={search === category && true}>
-                  {category === "" ? "All" : category}
+                  {category === '' ? 'All' : category}
                 </Link>
-              );
+              )
             })
           }
         </div>
       </div>
-      <PortfolioEntries
-        entries={filterByCategory(publishedPortfolioEntries, search)}
-      />
+      <PortfolioEntries entries={filterByCategory(publishedPortfolioEntries, search)} />
     </main>
   </Container>
 </Layout>

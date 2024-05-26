@@ -1,11 +1,13 @@
 ---
-import Container from "@components/container.astro";
-import Dropdown from "./dropdown.astro";
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import { Icon } from "astro-icon";
-import config from "@utils/config";
+import Container from '@components/container.astro'
+import Dropdown from './dropdown.astro'
+import { Astronav, MenuItems, MenuIcon } from 'astro-navbar'
+import { Icon } from 'astro-icon'
+import config from '@utils/config'
+import { Image } from 'astro:assets'
+import heroImage from '../../assets/logo.png'
 
-const nav = config.nav;
+const nav = config.nav
 ---
 
 <Container>
@@ -13,12 +15,15 @@ const nav = config.nav;
     <Astronav>
       <div class="flex w-full sm:w-auto items-center justify-between">
         <a href="/" class="text-lg flex items-center gap-2">
-          <Icon class="h-8" name="ion:game-controller" />
-          <div>
-            <span class="font-bold text-slate-800">Oodri</span><span
-              class="text-slate-500">.dev</span
-            >
-          </div>
+          <Image
+            src={heroImage}
+            alt="Audrey Downey - Designer full-stack developer"
+            sizes="(max-width: 600px) 100vw, 300px"
+            loading="eager"
+            class="max-w-[150px]"
+            width={600}
+            height={600}
+          />
         </a>
         <div class="block sm:hidden">
           <MenuIcon class="w-6 h-6 text-gray-800" />
@@ -30,18 +35,12 @@ const nav = config.nav;
             nav.map((item, index) => (
               <>
                 {item.children && (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === nav.length - 1}
-                  />
+                  <Dropdown title={item.title} children={item.children} lastItem={index === nav.length - 1} />
                 )}
 
                 {!item.children && (
                   <li>
-                    <a
-                      href={item.path}
-                      class="flex sm:px-3 py-2 text-gray-600 hover:text-gray-900 ">
+                    <a href={item.path} class="flex sm:px-3 py-2 text-gray-600 hover:text-gray-900 ">
                       {item.title}
                     </a>
                   </li>

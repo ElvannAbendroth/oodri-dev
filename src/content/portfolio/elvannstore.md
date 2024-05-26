@@ -14,7 +14,7 @@ links: {
     demo: 'https://elvannstore.com/',
     github: 'https://elvannstore.com/'
 }
-featured: true
+featured: false
 role: 'Owner, Web developer and UI/UX designer'
 timeline: "May 2020-now (ongoing)"
 ---

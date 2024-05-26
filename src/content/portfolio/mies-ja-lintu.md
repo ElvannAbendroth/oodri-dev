@@ -13,7 +13,7 @@ stack: [React, NextJS]
 links: {
     demo: 'https://miesjalintu-website.vercel.app/',
 }
-featured: true
+featured: false
 role: 'Web developer and UI/UX designer'
 timeline: "2024-now"
 ---

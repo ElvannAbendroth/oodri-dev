@@ -35,7 +35,7 @@ interface MenuItem {
 
 export const config: SiteConfig = {
   hero: {
-    headline: "Full-stack Javascript Developer",
+    headline: "Designer & Full-Stack Web Developer",
     subtitle:
       "🚀✨ Hi, my name is Audrey and I'm a full-stack developer and UI/UX Designer based in Helsinki. I love building beautiful web tools that inspire creativity.",
 

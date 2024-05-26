@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Landing Page Redesign for Jekyll Blog"
-snippet: "A Landing Page redesign project for Jekyll's blogging platform."
+title: "Brand & Landing Page Redesign for Jekyll Blog"
+snippet: "A brand & landing Page redesign project for Jekyll's blogging platform."
 image: {
     src: "assets/portfolio/jekyll-cover.png",
     alt: "Jekyll Blog"
