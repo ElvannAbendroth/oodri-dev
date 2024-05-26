@@ -1,35 +1,25 @@
 ---
-import { ViewTransitions } from "astro:transitions";
-import { SEO } from "astro-seo";
-import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
-import "@utils/style.css";
+import { ViewTransitions } from 'astro:transitions'
+import { SEO } from 'astro-seo'
+import Footer from '@components/footer.astro'
+import Navbar from '@components/navbar/navbar.astro'
+import '@fontsource-variable/inter/index.css'
+import '@utils/style.css'
 
 export interface Props {
-  title: string;
-  openGraphImage?: string;
-  description?: string;
+  title: string
+  openGraphImage?: string
+  description?: string
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site,
-).toString();
+const resolvedImageWithDomain = new URL('/opengraph.png', Astro.site).toString()
 
-const {
-  title,
-  description,
-  openGraphImage = resolvedImageWithDomain,
-} = Astro.props;
+const { title, description, openGraphImage = resolvedImageWithDomain } = Astro.props
 
-const makeTitle = title
-  ? title + " | " + "Oodri"
-  : "Oodri - Web developer & UI/UX Designer";
-const defaultDescription =
-  "👋 Hey there!  I'm Oodri, a web developer based in Helsinki!";
+const makeTitle = title ? title + ' | ' + 'Oodri' : 'Oodri - Web developer & UI/UX Designer'
+const defaultDescription = "👋 Hey there!  I'm Oodri, a web developer based in Helsinki!"
 ---
 
 <!doctype html>
@@ -49,13 +39,13 @@ const defaultDescription =
       openGraph={{
         basic: {
           url: canonicalURL,
-          type: "website",
+          type: 'website',
           title: `${title}`,
           image: openGraphImage,
         },
         optional: {
           description: description,
-          siteName: "Oodri | Web Developer & UI/UX Designer",
+          siteName: 'Oodri | Web Developer & UI/UX Designer',
         },
         image: {
           alt: title,
@@ -85,19 +75,18 @@ const defaultDescription =
         content-visibility: auto;
       }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYRTH2EKDV"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYRTH2EKDV"></script>
     <script>
       // @ts-ignore
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
       function gtag() {
         // @ts-ignore
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
       // @ts-ignore
-      gtag("js", new Date());
+      gtag('js', new Date())
       // @ts-ignore
-      gtag("config", "G-JYRTH2EKDV");
+      gtag('config', 'G-JYRTH2EKDV')
     </script>
   </body>
 </html>
