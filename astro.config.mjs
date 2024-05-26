@@ -15,5 +15,7 @@ export default defineConfig({
   redirects: {
     "/portfolio": "/projects",
     "/portfolio/[slug]": "/projects/[slug]",
+    "/resume/hg":
+      "https://www.dropbox.com/scl/fi/yh92xauqwtlcgnrrv49sv/Audrey-Downey-Resume-2024-May-26.pdf?rlkey=edotjjxtz78ydbamve1i82d2m&dl=0",
   },
 });
