@@ -21,5 +21,7 @@ export default defineConfig({
       "https://www.dropbox.com/scl/fi/z8wscrl90s15g6bief0b6/Trust-Me-I-m-an-Engineer-Branding.pdf?rlkey=7o6fbaq9zt81wkobwxb4tcryo&dl=0",
     "/resume/andc":
       "https://www.dropbox.com/scl/fi/yh92xauqwtlcgnrrv49sv/Audrey-Downey-Resume-2024-May-26.pdf?rlkey=edotjjxtz78ydbamve1i82d2m&dl=0",
+    "/resume/chaptersofjoy":
+      "https://www.dropbox.com/scl/fi/yrupeb7d0xaw1zjhhgzq7/Audrey-Downey-Resume-2024-March-3-1.pdf?rlkey=jyqyyxex3c4gu8ghi7q0rht5k&dl=0",
   },
 });
