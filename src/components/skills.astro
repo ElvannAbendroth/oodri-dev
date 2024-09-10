@@ -1,49 +1,47 @@
 ---
 // @ts-ignore
-import { Icon } from "astro-icon";
+import { Icon } from 'astro-icon'
 
-const title = "Skills";
-const description =
-  "Here are some of the tools I have used on different projects.";
+const title = 'Tools I Love Working With'
+const description = 'Here are some of the tools I have used on different projects.'
 
 const skills = [
   {
-    title: "UI/UX Design",
-    description:
-      "Figma, Adobe Photoshop, Affinity, Canva, Pro Create, Inkscape.",
-    icon: "ph:paint-brush-fill",
+    title: 'UI/UX Design',
+    description: 'Figma, Adobe Photoshop, Affinity, Canva, Pro Create, Inkscape.',
+    icon: 'ph:paint-brush-fill',
   },
   {
-    title: "Front-end",
-    description: "React, NextJS 13, Typescript, Tailwind, Radix UI, Astro.",
-    icon: "ph:code-bold",
+    title: 'Front-end',
+    description: 'React, NextJS 13, Typescript, Tailwind, Radix UI, Astro.',
+    icon: 'ph:code-bold',
   },
   {
-    title: "Back-end & Database",
-    description: "NextJS 13, SSR with React, Node.js, Express, MongoDB.",
-    icon: "bx:bxs-data",
+    title: 'Back-end & Database',
+    description: 'NextJS 13, SSR with React, Node.js, Express, MongoDB.',
+    icon: 'bx:bxs-data',
   },
   {
-    title: "CMS & E-Commerce",
-    description: "Contentful, Shopify, Wordpress, Woocommerce.",
-    icon: "mdi:cart-outline",
+    title: 'CMS & E-Commerce',
+    description: 'Contentful, Shopify, Wordpress, Woocommerce.',
+    icon: 'mdi:cart-outline',
   },
   {
-    title: "Deployment & Hosting",
-    description: "Fly.io, Vercel, Github Pages",
-    icon: "akar-icons:vercel-fill",
+    title: 'Deployment & Hosting',
+    description: 'Fly.io, Vercel, Github Pages',
+    icon: 'akar-icons:vercel-fill',
   },
   {
-    title: "Others Tools",
-    description: "Git, Github, VSCode, DaVinci Resolve, Pro Tools, Studio One",
-    icon: "tabler:tool",
+    title: 'Others Tools',
+    description: 'Git, Github, VSCode, DaVinci Resolve, Pro Tools, Studio One',
+    icon: 'tabler:tool',
   },
-];
+]
 ---
 
 <div class="flex flex-col gap-8 my-16">
   <div class="flex flex-col gap-2">
-    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    <h2 class="typo-h2">
       {title}
     </h2>
     <p class="text-lg mt-4 text-slate-600">
@@ -53,16 +51,14 @@ const skills = [
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
     {
-      skills.map((item) => (
+      skills.map(item => (
         <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-            <Icon class="text-white" name={item.icon} />
+          <div class="mt-1 bg-foreground rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-background" name={item.icon} />
           </div>
-          <div>
-            <h3 class="font-bold text-lg">{item.title}</h3>{" "}
-            <p class="text-slate-500 mt-2 leading-relaxed">
-              {item.description}
-            </p>
+          <div class="flex flex-col gap-3">
+            <h3 class="text-xl font-extrabold mt-0">{item.title}</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
           </div>
         </div>
       ))

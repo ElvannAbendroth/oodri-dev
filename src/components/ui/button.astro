@@ -1,48 +1,40 @@
 ---
 export interface ButtonProps {
-  size?: "sm" | "md" | "lg";
-  block?: boolean;
-  style?: ButtonStyle;
-  class?: string;
-  [x: string]: any;
-  isActive?: boolean;
+  size?: 'sm' | 'md' | 'lg'
+  block?: boolean
+  style?: ButtonStyle
+  class?: string
+  [x: string]: any
+  isActive?: boolean
 }
 
-export type ButtonStyle = "outline" | "primary" | "inverted" | "subtle";
+export type ButtonStyle = 'outline' | 'primary' | 'inverted' | 'subtle'
 
-const {
-  size = "md",
-  style = "primary",
-  block,
-  class: className,
-  isActive = false,
-  ...rest
-} = Astro.props;
+const { size = 'md', style = 'primary', block, class: className, isActive = false, ...rest } = Astro.props
 
 const sizes = {
-  sm: "px-2 py-1 text-sm",
-  md: "px-5 py-2.5",
-  lg: "px-6 py-3",
-};
+  sm: 'px-2 py-1 text-sm',
+  md: 'px-5 py-2.5',
+  lg: 'px-6 py-3',
+}
 
 const styles = {
-  outline: "border-2 border-black hover:bg-black text-black hover:text-white",
-  primary:
-    "bg-black text-white hover:bg-slate-900  border-2 border-transparent",
-  subtle:
-    "bg-slate-100 text-black hover:bg-slate-300 border-2 border-transparent",
-};
+  outline: 'border-2 border-foregroundforeground hover:bg-foreground text-foreground hover:text-foreground',
+  primary: 'bg-foreground text-background hover:bg-foreground/90  border-2 border-transparent',
+  inverted: 'bg-background text-foreground hover:bg-background/90  border-2 border-transparent',
+  subtle: 'bg-slate-100 text-foreground hover:bg-slate-300 border-2 border-transparent',
+}
 ---
 
 <button
   {...rest}
   class:list={[
-    "rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 transition-all",
-    block && "w-full",
+    'rounded text-center focus-visible:ring-2 ring-offset-2 ring-gray-200 transition-all',
+    block && 'w-full',
     sizes[size],
     styles[style],
-    isActive && style === "subtle" && "bg-slate-300",
+    isActive && style === 'subtle' && 'bg-slate-300',
     className,
-  ]}
-  ><slot />
+  ]}>
+  <slot />
 </button>

@@ -35,9 +35,9 @@ interface MenuItem {
 
 export const config: SiteConfig = {
   hero: {
-    headline: "Designer & Full-Stack Web Developer",
+    headline: "Crafting Digital Experiences with Design, Code, and Strategy",
     subtitle:
-      "🚀✨ Hi, my name is Audrey and I'm a full-stack developer and UI/UX Designer based in Helsinki. I love building beautiful web tools that inspire creativity.",
+      "🚀✨ Hi, my name is Audrey, and I combine design and web development to create digital experiences that users fall in love with, and businesses grow from.",
 
     ctas: [
       {
@@ -46,21 +46,20 @@ export const config: SiteConfig = {
         class: "flex gap-1 items-center justify-center",
         rel: "noopener",
         icon: {
-          class: "text-white w-5 h-5",
+          class: "text-background w-5 h-5",
           name: "bx:bxl-github",
         },
         label: "Visit my Github",
         style: "primary",
       },
       {
-        //href: "./src/assets/resume/Audrey Downey - Dev Resume September 2023.pdf",
-        href: "https://www.dropbox.com/scl/fi/r1txjdtddt8bnotxx6goa/Audrey-Downey-Dev-Resume-January-2024-3.pdf?rlkey=6cb1g1o86j82a71g42wpcfc76&dl=0",
+        href: "https://www.dropbox.com/scl/fi/2dx69vm9vo346rioo25c6/Audrey-Downey-Dev-Resume-2024-August-2-Powered-by-MaxAI.pdf?rlkey=3pv1c4gqestrfdqlf6r7cpedm&dl=0",
         //download: "Audrey Downey - Resume September 2023",
         target: "_blank",
         class: "flex gap-1 items-center justify-center",
         rel: "noopener",
         icon: {
-          class: "text-black w-6 h-6",
+          class: "text-foreground w-6 h-6",
           name: "bx:bxs-cloud-download",
         },
         label: "Download my resume",
@@ -80,10 +79,7 @@ export const config: SiteConfig = {
     //     { title: "404 Page", path: "/404" },
     //   ],
     // },
-    {
-      title: "About",
-      path: "/about",
-    },
+
     {
       title: "Projects",
       path: "/projects/?search=Featured",

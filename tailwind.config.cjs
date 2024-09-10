@@ -4,8 +4,19 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        foreground: "#151A1D",
+        background: "#ffffff",
+        accent: "#7F9EA3",
+      },
       fontFamily: {
-        sans: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
+        display: ["Lato", ...defaultTheme.fontFamily.sans],
+        sans: [
+          "Lato",
+          "Inter Variable",
+          "Inter",
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
     },
   },
