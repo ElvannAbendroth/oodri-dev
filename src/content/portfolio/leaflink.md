@@ -11,7 +11,6 @@ category: "Full-stack App"
 tags: []
 stack: [NextJS 13, Tailwind, MongoDB, Vercel]
 links: {
-    demo: 'https://leaflink.vercel.app/login',
     github: 'https://github.com/ElvannAbendroth/leaflink'
 }
 featured: true
