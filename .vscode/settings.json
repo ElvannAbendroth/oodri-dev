@@ -6,5 +6,12 @@
     "retarget",
     "salesy",
     "Starttiraha"
-  ]
+  ],
+  "[mdx]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  }
 }

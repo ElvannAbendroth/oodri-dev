@@ -13,7 +13,7 @@ stack: ["Webflow", "Figma"]
 links: {
     demo: 'https://www.moved.fi/',
 }
-featured: true
+featured: false
 role: 'Web developer'
 timeline: "December 2023-now"
 ---
@@ -23,4 +23,3 @@ As of December 2023, I've joined MoveED, a Finnish non-profit organization that 
 Since I've started with the project, I've been involved in helping MovED in their "Moved by Mentoring" campaign, which aims at providing Ukrainian teachers mentoring support to help them deal with the challenges they are facing with the war.
 
 In the current phase of the work, I have been focused on contributing to improving the user experience to help user on the website find the information that they need in order to take action, hence helping MoveED in their business operations.  The goal is to make small iterative but impactful changes that will help MovED increase the number of volunteers and mentees singing up for their programs.
-
