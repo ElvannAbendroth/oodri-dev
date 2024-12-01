@@ -11,7 +11,7 @@ category: "Full-stack App"
 tags: []
 stack: [NextJS 13, Tailwind, MongoDB, Vercel]
 links: {
-    demo: 'https://leaflink.vercel.app/',
+    demo: 'https://leaflink.vercel.app/login',
     github: 'https://github.com/ElvannAbendroth/leaflink'
 }
 featured: true
@@ -20,15 +20,14 @@ timeline: "July 2023-now"
 ---
 
 
-
 ## About this Project
 
 A [Linktree](https://linktr.ee/) clone built using Next, NextAuth, Tailwind & MongoDB.  This project is an learning experiment on how to build a simple, modern fullstack web application using **NextJS 13** and server components.
 
 The goal of this app was to create a simple content management system that allowing users to create an account & login, manage a public page featuring links, and share their public page with the world.
 
-
 ### User Features
+
 - Account Creation & Management
 - Profile Customization
 - Links Creation & Management
@@ -73,8 +72,6 @@ Before getting started with the wireframes & design, I first identified the core
     - Account Deletion
 4. Public Page:
     - View Creator Links
-    
-
 
 **Additional Features**
 
@@ -84,11 +81,11 @@ Before getting started with the wireframes & design, I first identified the core
 ### User Journey
 
 Leaflink will be receiving 2 different types of users:
+
 1. **Creators:** They will be the main users, as they will be responsible to drive traffic to the application.
 2. **Visitors:** They will visit the website only briefly form clicking links from they favorite content creators on social media platforms (mainly Instagram and TikTok)
 
 ![Leaflink User Journey & Screens](../../assets/portfolio/leaflink-user-journey.png)
-
 
 ### Initial Low-Fidelity Wireframe
 
@@ -109,14 +106,11 @@ For now, the analytics page will be left out of the design.
 ![Leaflink Colors](../../assets/portfolio/leaflink-Colors.png)
 ![Leaflink Components](../../assets/portfolio/leaflink-Components.png)
 
-
 ## High Fidelity Wireframe
 
 > Note: The original design has received many iterations during developement.  The feel and style have stayed similar, but the layouts have been changed and improved significantly.  Take a look at the [live demo](https://leaflink.vercel.app/) for a more up-to-date version.
 
 ![Leaflink Components](../../assets/portfolio/leaflink-HiFi-Wireframe.png)
-
-
 
 ## Conclusion & Future Development Ideas
 
