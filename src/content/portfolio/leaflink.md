@@ -72,7 +72,7 @@ Before getting started with the wireframes & design, I first identified the core
 4. Public Page:
     - View Creator Links
 
-**Additional Features**
+#### **Additional Features**
 
 1. Archive System: Allowing users to "soft" delete links, hence allowing them to keep track of stats easier.
 2. Analytics: Allowing the users to track how many clicks each individual link receives
