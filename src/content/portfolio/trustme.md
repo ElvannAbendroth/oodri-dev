@@ -11,7 +11,8 @@ category: "Static Site"
 tags: []
 stack: [React, AstroJS]
 links: {
-    behance: 'https://www.behance.net/gallery/198952875/eLearning-Website-Design-Branding'
+    behance: 'https://www.behance.net/gallery/198952875/eLearning-Website-Design-Branding',
+    demo: "http://www."
 }
 featured: true
 role: 'Visual IDentity Designer, UI/UX Designer & Web Developer'
