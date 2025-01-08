@@ -24,23 +24,42 @@ Taylor Chip is a US-based company who sells cookies both through their physical 
 
 The secondary goal of the project was to build the new page in a way to utilize Shopify theme features that allow the users to create their own sections and hence allowing the users to modify and change the content of the pages themselves.  The sections had to be reusable and work both on mobile and desktop.
 
-## Final Designs
+## Final Landing Page Redesign
 
 Here's the final full-page desktop design of the landing page:
 
-![Full Page](./nov-2024-desktop.png)
+<a href="/taylorchip/nov-2024-desktop.png" target="_blank">![Full Page](./nov-2024-desktop.png)</a>
+
 
 ### Full-Length Screenshots
 
-Here are zoomable picture files:
+Click on the pictures to see them bigger
 
-- ![Before the Redesign](/taylorchip/before.png)
-- [Landing Page Desktop (After)](/taylorchip/nov-2024-desktop.png)
-- [Landing Page Mobile (After)](/public/taylorchip/nov-2024-mobile.png)
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center items-start">
+   <div class="w-full">
+        <p class="text-sm font-bold">Landing Page Desktop (BEFORE):</p>
+        <a href="/taylorchip/before.png" target="_blank">
+            <img src="/taylorchip/before.png" alt="Landing Page (BEFORE)" class="w-full h-auto aspect-square object-cover object-top">
+        </a>
+    </div>
+  <div class="w-full">
+     <p class="text-sm font-bold">Landing Page Desktop (AFTER):</p>
+        <a href="/taylorchip/nov-2024-desktop.png" target="_blank">
+            <img src="/taylorchip/nov-2024-desktop.png" alt="Landing Page Desktop (AFTER)" class="w-full h-auto aspect-square object-cover object-top">
+        </a>
+    </div>
+    <div class="w-full">
+    <p class="text-sm font-bold">Landing Page Mobile (AFTER):</p>
+        <a href="/public/taylorchip/nov-2024-mobile.png" target="_blank">
+            <img src="/public/taylorchip/nov-2024-mobile.png" alt="Landing Page Mobile (AFTER)" class="w-full h-auto aspect-square object-cover object-top">
+        </a>
+    </div>
+</div>
 
 ## Case Study Walk-Through
 
 Here's a video walk-through in which I show not only the updated page, but also show the "before" version of the page, describe some of the problems we needed to solve, and also a short overview of what the project looks like on the backend.
+
 
 [Watch the Case Study Walk-Through Video](https://www.dropbox.com/scl/fi/umj64kg77fdxjqyrs6cov/Case-Study-Walk-Through.mkv?rlkey=doywze7ocu5tdwax9zzu7c3zg&dl=0)
 
